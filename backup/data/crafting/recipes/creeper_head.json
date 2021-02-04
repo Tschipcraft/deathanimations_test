@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:creeper_head"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gunpowder",
+        "count": 2
+    }
+}
