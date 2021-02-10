@@ -36,15 +36,16 @@ scoreboard players add @e[tag=bodypart] correction 1
 
 ## 1.16 & after:
 execute as @s at @s if entity @s[scores={OnFire=0}] positioned ~ ~0.20 ~ run summon armor_stand ^ ^ ^ {NoGravity:1b,Silent:1,Invisible:1b,Tags:["visual","drownedbody","head","watery"],Pose:{Head:[1f,1f,1f]},DisabledSlots:4140800,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{display:{Name:'{"text":"Drowned Head","italic":false}'},SkullOwner:{Id:[I;790009440,1639859901,-1397417282,-100772047],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0="}]}}}}]}
-
 scoreboard players add @e[tag=visual] correction 1
-##give @p minecraft:player_head{display:{Name:"{\"text\":\"Drowned\"}"},SkullOwner:{Id:"2f169660-61be-46bd-acb5-1abef9fe5731",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0="}]}}} 1
+
 
 particle minecraft:splash ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:block magma_block ~ ~1 ~ 0.2 0.4 0.2 0 300 normal
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:falling_dust obsidian ~ ~1 ~ 0.2 0.5 0.2 0 250 normal
 execute as @s at @s if entity @s[scores={OnFire=1}] run playsound minecraft:block.fire.extinguish hostile @a ~ ~ ~
+
+execute as @s run function deathanimations:summon/items
 
 
 ##function deathanimations:summon_soul

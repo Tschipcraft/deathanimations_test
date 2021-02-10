@@ -29,3 +29,7 @@ execute as @s[tag=arm] if score @s rotation matches -135..-45 run tp @s ~ ~0.26 
 execute as @s[tag=!head,tag=!chestplate,tag=!arm] if score @s rotation matches -90 run tp @s ~ ~0.10 ~
 execute as @s[tag=arm,tag=!chestplate] if score @s rotation matches -180 run tp @s ~ ~0.14 ~
 execute as @s[tag=arm,tag=!chestplate] if score @s rotation matches 180 run tp @s ~ ~0.14 ~
+
+# items
+execute as @s[tag=item,tag=bow] run tp @s ~ ~0.03 ~
+execute as @s[tag=item,tag=!bow] run tp @s ~ ~0.10 ~

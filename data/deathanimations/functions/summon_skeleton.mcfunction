@@ -34,12 +34,6 @@ scoreboard players add @e[tag=visual] correction 1
 particle minecraft:block bone_block ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
 
-# Item
-execute as @s at @s positioned ~ ~0.50 ~ run summon minecraft:armor_stand ^-0.2 ^-0.5 ^0.4 {Small:1b,Tags:[bodypart,skeletonbody,item,bow],Silent:1,Invisible:1,DisabledSlots:4144959}
-scoreboard players add @e[tag=bodypart] correction 1
-execute as @s at @s positioned ~ ~0.20 ~ run summon minecraft:armor_stand ^ ^ ^0.2 {Pose:{RightArm:[1f,1f,-92f]},ShowArms:1,NoAI:1,HandItems:[{id:"minecraft:bow",Count:1,tag:{Damage:383}}],NoGravity:1,Tags:[visual,skeletonbody,item,bow],Silent:1,Invisible:1,DisabledSlots:4136478}
-scoreboard players add @e[tag=visual] correction 1
-
 ##summon area_effect_cloud ~ ~ ~ {Tags:[clearItems],NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:5}
 
 ## rotation

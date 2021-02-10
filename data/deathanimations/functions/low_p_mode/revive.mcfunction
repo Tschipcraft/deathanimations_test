@@ -2,6 +2,7 @@
 
 tag @s add visual
 tag @s remove low_p_mode
+function deathanimations:visual_correction/decode
 execute as @s[tag=skeletonbody] run function deathanimations:low_p_mode/deactivate/skeleton
 execute as @s[tag=spiderbody] run function deathanimations:low_p_mode/deactivate/spider
 execute as @s[tag=cave_spiderbody] run function deathanimations:low_p_mode/deactivate/cave_spider

@@ -35,8 +35,8 @@ scoreboard players add @e[tag=bodypart] correction 1
 
 ## 1.16 & after:
 execute as @s at @s if entity @s[scores={OnFire=0}] positioned ~ ~0.20 ~ run summon armor_stand ^ ^ ^ {NoGravity:1b,Silent:1,Invisible:1b,Tags:["visual","huskbody","head","sandy"],Pose:{Head:[1f,1f,1f]},DisabledSlots:4140800,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{display:{Name:'{"text":"Husk Head","italic":false}'},SkullOwner:{Id:[I;448664699,-361085172,-1904994610,-1880265546],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3NGM2M2M4ZGI1ZjRjYTYyOGQ2OWEzYjFmOGEzNmUyOWQ4ZmQ3NzVlMWE2YmRiNmNhYmI0YmU0ZGIxMjEifX19"}]}}}}]}
-
 scoreboard players add @e[tag=visual] correction 1
+
 
 particle minecraft:block sand ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
@@ -44,7 +44,7 @@ execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:block
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:falling_dust obsidian ~ ~1 ~ 0.2 0.5 0.2 0 250 normal
 execute as @s at @s if entity @s[scores={OnFire=1}] run playsound minecraft:block.fire.extinguish hostile @a ~ ~ ~
 
-summon area_effect_cloud ~ ~ ~ {Tags:[clearItems],NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:5}
+execute as @s run function deathanimations:summon/items
 
 ##function deathanimations:summon_soul
 

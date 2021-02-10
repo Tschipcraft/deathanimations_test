@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"#minecraft:flowers",
+    "#minecraft:fishes",
+    "#minecraft:coals",
+    "#minecraft:arrows",
+    "#minecraft:music_discs",
+    "#minecraft:signs",
+    "minecraft:nautilus_shell",
+    "minecraft:dragon_breath",
+    "minecraft:totem_of_undying"
+	]
+}

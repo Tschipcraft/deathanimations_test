@@ -15,6 +15,10 @@ execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:block
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:falling_dust obsidian ~ ~1 ~ 0.2 0.5 0.2 0 250 normal
 execute as @s at @s if entity @s[scores={OnFire=1}] run playsound minecraft:block.fire.extinguish hostile @a ~ ~ ~
 
+
+execute as @s run function deathanimations:summon/items
+
+
 ##summon area_effect_cloud ~ ~ ~ {Tags:[clearItems],NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:5}
 
 ##function deathanimations:summon_soul
