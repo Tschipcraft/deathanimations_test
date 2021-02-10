@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:small_flowers",
+    "#deathanimations:tall_flowers"
+  ]
+}

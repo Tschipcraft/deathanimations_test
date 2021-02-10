@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:gunpowder"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gunpowder",
+        "count": 1
+    }
+}
