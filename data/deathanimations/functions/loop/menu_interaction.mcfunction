@@ -14,8 +14,8 @@ scoreboard players add @a[scores={menu=1..}] menu 1
 
 ## settings
 execute as @a unless entity @s[scores={blood_local=0..1}] run scoreboard players set @s blood_local 3
-execute as @a if entity @s[scores={blood_local=3}] run tellraw @s ["",{"text":"=-=Death Animations v1.2 by Tschipcraft installed!=-=","bold":true,"color":"aqua"},{"text":"\n"},{"text":"For settings issue the command","color":"green"},{"text":"\n"},{"text":"/trigger settings","italic":true,"color":"green","clickEvent":{"action":"suggest_command","value":"/trigger settings"},"hoverEvent":{"action":"show_text","value":"Or click here"}}]
-execute as @a if entity @s[scores={blood_local=3}] run tellraw @s ["",{"text":"[Death Animations]","color":"gray"},{"text":" Make sure to update or install the resource pack for this release!","color":"aqua"}]
+execute as @a if entity @s[scores={blood_local=3}] run tellraw @s ["",{"text":"=-=Death Animations v1.3 by Tschipcraft installed!=-=","bold":true,"color":"aqua"},{"text":"\n"},{"text":"For settings issue the command","color":"green"},{"text":"\n"},{"text":"/trigger settings","italic":true,"color":"green","clickEvent":{"action":"suggest_command","value":"/trigger settings"},"hoverEvent":{"action":"show_text","value":"Or click here"}}]
+execute as @a if entity @s[scores={blood_local=3}] run tellraw @s ["",{"text":"[Death Animations]","color":"gray"},{"text":" Make sure to install the resource pack! (Update not necessary from v1.2 to v1.3)","color":"aqua"}]
 execute as @a if entity @s[scores={blood_local=3}] if score Global blood_global matches 1 run scoreboard players set @s blood_local 1
 execute as @a if entity @s[scores={blood_local=3}] if score Global blood_global matches 0 run scoreboard players set @s blood_local 0
 scoreboard players set @a[scores={blood_local_on=1}] blood_local 1
