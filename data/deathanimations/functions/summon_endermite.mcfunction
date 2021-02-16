@@ -1,4 +1,5 @@
 ## by Tschipcraft
+
 execute at @s align y run tp @s ~ ~-1.4 ~
 summon armor_stand ~ ~-2.8 ~ {Tags:[endermite],Pose:{Head:[0f,0f,0f]},NoGravity:1b,Silent:1,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:chorus_fruit",Count:1b,tag:{CustomModelData:1,display:{Name:"{\"text\":\"Endermite\",\"italic\":false}"}}}],DisabledSlots:4140847}
 

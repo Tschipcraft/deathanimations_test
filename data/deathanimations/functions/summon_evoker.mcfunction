@@ -1,4 +1,6 @@
 ## by Tschipcraft
+execute as @s positioned ~ ~2.8 ~ run function deathanimations:summon/items
+
 data merge entity @s {Pose:{Head:[0f,0f,0f]},Small:0b,Marker:0,NoGravity:1}
 execute at @s run tp @s ~ ~-0.3 ~
 summon minecraft:armor_stand ^ ^ ^ {Small:1b,Tags:[bodypart,evokerbody,lame_bodypart],Silent:1,Invisible:1,DisabledSlots:4144959}
@@ -15,7 +17,7 @@ scoreboard players add @e[type=#deathanimations:marker_entities,tag=lame_bodypar
 
 particle minecraft:block redstone_block ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
-loot spawn ~ ~ ~ loot minecraft:entities/evoker
+execute if score Global enable_drops matches 1 run loot spawn ~ ~ ~ loot minecraft:entities/evoker
 
 ##function deathanimations:summon_soul
 

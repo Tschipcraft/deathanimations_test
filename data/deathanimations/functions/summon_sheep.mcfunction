@@ -18,7 +18,7 @@ scoreboard players add @e[type=#deathanimations:marker_entities,tag=lame_bodypar
 
 particle minecraft:block redstone_block ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
-loot spawn ~ ~ ~ loot minecraft:entities/sheep/white
+execute if score Global enable_drops matches 1 run loot spawn ~ ~ ~ loot minecraft:entities/sheep/white
 
 ##function deathanimations:summon_soul
 

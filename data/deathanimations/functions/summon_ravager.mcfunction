@@ -16,7 +16,7 @@ scoreboard players add @e[type=#deathanimations:marker_entities,tag=lame_bodypar
 
 particle minecraft:block redstone_block ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
-execute if score Global enable_pickup matches 0 run loot spawn ~ ~ ~ loot minecraft:entities/ravager
+execute if score Global enable_pickup matches 1 run loot spawn ~ ~ ~ loot minecraft:entities/ravager
 
 ##function deathanimations:summon_soul
 

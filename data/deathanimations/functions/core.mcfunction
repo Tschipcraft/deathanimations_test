@@ -30,7 +30,8 @@ execute as @e[type=#deathanimations:marker_entities,tag=death_detection] at @s r
 scoreboard players add @e[type=#deathanimations:marker_entities] cooldown 0
 
 ### Bodyparts/Animations
-execute at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest] at @s run function deathanimations:main
+execute if score Global part_lifetime matches 2.. at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest,limit=150] at @s run function deathanimations:main
+execute if score Global part_lifetime matches ..1 at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest,limit=60] at @s run function deathanimations:main
 
 ## Duration
 execute store result score global entity_count run execute if entity @e[type=#deathanimations:marker_entities,tag=bodypart]

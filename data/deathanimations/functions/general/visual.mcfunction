@@ -16,8 +16,13 @@ execute at @e[type=#deathanimations:marker_entities,tag=bodypart,sort=random,dis
 execute as @s[scores={b_test=0}] at @e[type=#deathanimations:marker_entities,tag=bodypart,sort=random,distance=..20,tag=!lame_bodypart] if score @s correction = @e[type=#deathanimations:marker_entities,tag=bodypart,sort=nearest,limit=1] correction run function deathanimations:visual_correction/found
 execute as @s[scores={b_test=0}] at @e[type=#deathanimations:marker_entities,tag=bodypart,sort=random,distance=..50,tag=!lame_bodypart] if score @s correction = @e[type=#deathanimations:marker_entities,tag=bodypart,sort=nearest,limit=1] correction run function deathanimations:visual_correction/found
 
-execute if score Global part_lifetime matches 1.. as @s[scores={b_test=0}] at @s run function deathanimations:animation/evaporate
-kill @s[scores={b_test=0}]
+#execute if score Global part_lifetime matches 1.. as @s[scores={b_test=0}] at @s run function deathanimations:animation/evaporate
+execute as @s[scores={b_test=0}] at @s run function deathanimations:low_p_mode/activate
+execute as @s[scores={b_test=0}] at @s run function deathanimations:low_p_mode/deactivate
+
+execute unless score Global part_lifetime matches 0 as @s[scores={timeout_parts=500..}] at @s run function deathanimations:low_p_mode/activate
+
+#kill @s[scores={b_test=0}]
 #execute as @s at @s unless entity @e[type=#deathanimations:marker_entities,tag=bodypart,distance=..10] run kill @s
 
 ##execute as @e[tag=visual,limit=1,sort=random] at @s if entity @e[tag=visual,distance=0.00001..0.1] run kill @s
