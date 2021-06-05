@@ -40,8 +40,13 @@ scoreboard players add @e[tag=visual] correction 1
 particle minecraft:block bone_block ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
 
-
+## Items
 execute as @s run function deathanimations:summon/items
+
+## Special nbt
+scoreboard players add @e[type=minecraft:armor_stand,tag=bodypart] da_id 1
+scoreboard players add @e[type=minecraft:armor_stand,tag=visual] da_id 1
+function deathanimations:summon/special_nbt
 
 ##summon area_effect_cloud ~ ~ ~ {Tags:[clearItems],NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:5}
 

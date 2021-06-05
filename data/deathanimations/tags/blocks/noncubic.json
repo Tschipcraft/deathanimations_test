@@ -47,6 +47,8 @@
 		"#deathanimations:portals",
 		"#minecraft:trapdoors",
 		"#minecraft:walls",
-		"#minecraft:fences"
+		"#minecraft:fences",
+		"minecraft:sugar_cane",
+		"#minecraft:climbable"
 	]
 }

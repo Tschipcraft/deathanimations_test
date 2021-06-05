@@ -14,6 +14,8 @@ scoreboard players add @e[tag=ragdoll_core] wait 1
 
 scoreboard players add @e[tag=ragdoll] age 1
 scoreboard players add @e[tag=ragdoll] cooldown 0
+
+## Ragdoll pickup
 scoreboard players add @e[tag=ragdoll_core] pick_up 0
 scoreboard players add @e[tag=ragdoll_core,scores={pick_up=1..}] pick_up 1
 
@@ -42,6 +44,7 @@ execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core] store res
 execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core] store result score @s zm run data get entity @s Motion[2] 200
 
 
+## Effects
 effect give @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] minecraft:instant_damage 10 255 true
 effect give @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] minecraft:resistance 10 255 true
 effect give @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] minecraft:absorption 10 255 true
@@ -54,6 +57,7 @@ execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_part-all-parts]
 ##execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_part-all-parts] at @s if entity @e[type=!armor_stand,type=!item,distance=..0.5] run function deathanimations:ragdoll_push
 
 execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core] at @s if entity @a[distance=..0.5] run function deathanimations:ragdoll_push
+
 
 ## Float in water
 execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core,scores={wait=1}] at @s if block ~ ~ ~ water run function deathanimations:ragdoll_water

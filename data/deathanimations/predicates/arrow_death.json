@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "direct_killer",
+  "predicate": {
+    "type": "minecraft:arrow"
+  }
+}

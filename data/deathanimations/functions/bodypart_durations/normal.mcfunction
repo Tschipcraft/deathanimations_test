@@ -11,7 +11,7 @@ execute if score low_p_entities entity_count matches 100.. run function deathani
 
 execute if score global entity_count matches 30.. run function deathanimations:clear
 
-execute as @e[type=#deathanimations:marker_entities,tag=visual,scores={age=35..},tag=OnGround] at @s unless entity @a[distance=..3] run function deathanimations:low_p_mode/activate
-execute as @e[type=#deathanimations:marker_entities,tag=low_p_mode,scores={timeout_parts=..500}] at @s if entity @a[distance=..2] run function deathanimations:low_p_mode/revive
+execute as @e[type=#deathanimations:marker_entities,tag=visual,scores={age=35..},tag=OnGround,tag=!playerbody] at @s unless entity @a[distance=..3] run function deathanimations:low_p_mode/activate
+execute as @e[type=#deathanimations:marker_entities,tag=low_p_mode,scores={timeout_parts=..500},limit=30,sort=random] at @s if entity @a[distance=..2] run function deathanimations:low_p_mode/revive
 
-execute as @e[type=#deathanimations:marker_entities,tag=low_p_mode,tag=!OnGround] at @s run function deathanimations:low_p_mode/revive
+#execute as @e[type=#deathanimations:marker_entities,tag=low_p_mode,tag=!OnGround] at @s run function deathanimations:low_p_mode/revive

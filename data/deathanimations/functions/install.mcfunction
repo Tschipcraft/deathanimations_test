@@ -24,6 +24,7 @@ scoreboard objectives add dz dummy
 scoreboard objectives add rotation dummy
 scoreboard objectives add entity_count dummy
 scoreboard objectives add wait dummy
+scoreboard objectives add da_id dummy
 
 scoreboard objectives add menu trigger
 scoreboard objectives add da_welcome trigger
@@ -39,6 +40,18 @@ scoreboard objectives add e_detection dummy
 scoreboard objectives add spawn_death_e dummy
 
 scoreboard objectives add b_test dummy
+
+
+## Ragdoll
+scoreboard objectives add da_ragdoll_t dummy
+
+## Player death
+scoreboard objectives add da_player_death deathCount
+
+
+## Lightning
+scoreboard objectives add da_lightning dummy
+
 
 ## teams
 team add NoCollision

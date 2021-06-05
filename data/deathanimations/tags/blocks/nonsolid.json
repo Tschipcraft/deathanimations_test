@@ -34,6 +34,8 @@
 		"minecraft:lantern",
 		"minecraft:redstone_wire",
 		"minecraft:daylight_detector",
+		"minecraft:lever",
+		"minecraft:repeater",
 		"minecraft:air",
 		"minecraft:cave_air",
 		"minecraft:tripwire",
@@ -46,6 +48,9 @@
 		"#minecraft:signs",
 		"#minecraft:wooden_pressure_plates",
 		"#deathanimations:portals",
-		"#minecraft:trapdoors"
+		"#minecraft:trapdoors",
+		"minecraft:sugar_cane",
+		"minecraft:composter",
+		"#minecraft:climbable"
 	]
 }

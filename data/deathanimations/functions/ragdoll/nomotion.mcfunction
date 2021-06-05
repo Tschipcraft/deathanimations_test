@@ -16,5 +16,4 @@ execute as @s[tag=ragdoll_torso_nom,tag=ragdoll_zombie] at @s if entity @e[type=
 execute as @s at @s if entity @e[type=tnt,distance=..9,nbt={Fuse:1s}] run kill @s
 
 # fire
-execute as @s at @s if block ~ ~2 ~ fire run particle smoke ~ ~1.3 ~ 0.1 0.1 0.1 0.01 5
-execute as @s at @s if block ~ ~2 ~ lava run particle smoke ~ ~1.3 ~ 0.1 0.1 0.1 0.01 5
+execute as @s if predicate deathanimations:on_fire at @s run particle smoke ~ ~1.3 ~ 0.1 0.1 0.1 0.01 1

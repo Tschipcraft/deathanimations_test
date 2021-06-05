@@ -1,0 +1,317 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "deathanimations:entities/detect_death"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/blaze",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:blaze"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/cave_spider",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:cave_spider"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/chicken",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:chicken"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/cow",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:cow"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/creeper",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:creeper"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/drowned",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:drowned"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/endermite",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:endermite"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/evoker",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:evoker"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/husk",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:husk"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/iron_golem",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:iron_golem"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/phantom",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:phantom"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/pig",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:pig"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/pillager",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:pillager"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/ravager",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:ravager"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/sheep",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:sheep"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/skeleton",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:skeleton"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/spider",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:spider"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/stray",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:stray"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/villager",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:villager"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/vindicator",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:vindicator"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/wither_skeleton",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:wither_skeleton"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/zombie_villager",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:zombie_villager"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/zombie",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:zombie"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

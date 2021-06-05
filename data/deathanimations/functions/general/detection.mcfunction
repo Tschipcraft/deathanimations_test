@@ -50,7 +50,7 @@ execute as @s[tag=cave_spider_death,scores={spawn_death_e=1}] positioned ~ ~ ~ r
 
 execute as @s[tag=phantom_death] at @e[type=phantom,distance=..10] if score @e[type=minecraft:phantom,sort=nearest,limit=1] initalise = @s initalise run function deathanimations:general/detection_tp
 execute as @s[tag=phantom_death,scores={spawn_death_e=1}] run function deathanimations:general/detection_test
-execute as @s[tag=phantom_death,scores={spawn_death_e=1}] positioned ~ ~1 ~ run function deathanimations:summon_phantom
+execute as @s[tag=phantom_death,scores={spawn_death_e=1}] at @s rotated as @s positioned ~ ~1 ~ run function deathanimations:summon_phantom
 
 execute as @s[tag=pig_death] at @e[type=pig,distance=..10] if score @e[type=minecraft:pig,sort=nearest,limit=1] initalise = @s initalise run function deathanimations:general/detection_tp
 execute as @s[tag=pig_death,scores={spawn_death_e=1}] run function deathanimations:general/detection_test
@@ -96,6 +96,11 @@ execute as @s[tag=iron_golem_death,scores={cooldown=0,spawn_death_e=1}] position
 execute as @s[tag=ravager_death] at @e[type=ravager,distance=..10] if score @e[type=minecraft:ravager,sort=nearest,limit=1] initalise = @s initalise run function deathanimations:general/detection_tp
 execute as @s[tag=ravager_death,scores={spawn_death_e=1}] run function deathanimations:general/detection_test
 execute as @s[tag=ravager_death,scores={cooldown=0,spawn_death_e=1}] positioned ~ ~1 ~ run function deathanimations:summon_ravager
+
+execute as @s[tag=blaze_death] at @e[type=blaze,distance=..10] if score @e[type=minecraft:blaze,sort=nearest,limit=1] initalise = @s initalise run function deathanimations:general/detection_tp
+execute as @s[tag=blaze_death,scores={spawn_death_e=1}] run function deathanimations:general/detection_test
+execute as @s[tag=blaze_death,scores={spawn_death_e=1}] positioned ~ ~1 ~ run function deathanimations:summon_blaze
+
 
 #execute as @s[tag=tropical_fish_death] at @e[type=tropical_fish,distance=..10] if score @e[type=minecraft:tropical_fish,sort=nearest,limit=1] initalise = @s initalise run tp @s ~ ~ ~ ~ ~
 #execute as @s[tag=tropical_fish_death] unless entity @e[type=minecraft:tropical_fish,distance=..1] positioned ~ ~1 ~ run function deathanimations:summon_tropical_fish

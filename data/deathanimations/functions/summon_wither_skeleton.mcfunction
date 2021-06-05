@@ -35,7 +35,12 @@ scoreboard players add @e[tag=visual] correction 1
 
 particle minecraft:block obsidian ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
 
+## Items
 execute as @s run function deathanimations:summon/items
 
+## Special nbt
+scoreboard players add @e[type=minecraft:armor_stand,tag=bodypart] da_id 1
+scoreboard players add @e[type=minecraft:armor_stand,tag=visual] da_id 1
+function deathanimations:summon/special_nbt
 
 kill @s[type=!player]

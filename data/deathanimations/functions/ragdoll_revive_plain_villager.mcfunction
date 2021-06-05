@@ -37,7 +37,8 @@ team join NoCollision @e[tag=ragdoll]
 scoreboard players add @e[tag=ragdoll] correction 1
 scoreboard players add @e[tag=ragdoll,scores={correction=1}] age 3
 
+scoreboard players operation Global correction = @s correction
+execute as @e[tag=ragdoll_visual_nom,tag=!ragdoll_torso_nom] if score @s correction = Global correction run kill @s
 
-kill @e[tag=ragdoll_visual_nom,tag=!ragdoll_torso_nom,distance=..4]
 
 kill @s[type=!player]

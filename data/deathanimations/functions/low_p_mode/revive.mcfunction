@@ -2,6 +2,7 @@
 
 tag @s add visual
 tag @s remove low_p_mode
+execute if block ~ ~4.0 ~ #deathanimations:nonsolid run tag @s remove OnGround
 execute as @s[tag=encode] at @s run function deathanimations:visual_correction/decode
 execute as @s[tag=skeletonbody] at @s run function deathanimations:low_p_mode/deactivate/skeleton
 execute as @s[tag=spiderbody] at @s run function deathanimations:low_p_mode/deactivate/spider

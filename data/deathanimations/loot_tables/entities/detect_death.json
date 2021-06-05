@@ -1,0 +1,484 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:blaze}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:blaze"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:cave_spider}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:cave_spider"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:chicken}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:chicken"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:cow}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:cow"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:creeper}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:creeper"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:drowned}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:drowned"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:endermite}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:endermite"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:evoker}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:evoker"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:husk}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:husk"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:iron_golem}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:iron_golem"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:phantom}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:phantom"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:pig}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:pig"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:pillager}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:pillager"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:ravager}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:ravager"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:sheep}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:sheep"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:skeleton}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:skeleton"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:spider}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:spider"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:stray}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:stray"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:villager}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:villager"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:vindicator}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:vindicator"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:wither_skeleton}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:wither_skeleton"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:zombie_villager}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:zombie_villager"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:zombie}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:zombie"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1b,da_death_detect:1b}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_custom_head:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[custom_head]}"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:copy_nbt",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "CustomName",
+                  "target": "CustomName",
+                  "op": "replace"
+                },
+                {
+                  "source": "ActiveEffects",
+                  "target": "ActiveEffects",
+                  "op": "replace"
+                },
+                {
+                  "source": "HandItems",
+                  "target": "HandItems",
+                  "op": "replace"
+                },
+                {
+                  "source": "ArmorItems",
+                  "target": "ArmorItems",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_magic_death:1b,da_no_knockback:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_magic": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_ragdoll:1b,da_no_knockback:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "bypasses_armor": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_ragdoll:1b,da_void:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "bypasses_invulnerability": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_ragdoll:1b,da_no_knockback:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "bypasses_magic": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_lightning_death:1b,da_no_knockback:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_lightning": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_ragdoll:1b,da_projectile_death:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_projectile": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_explosion_death:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_explosion": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_fire_death:1b,da_no_knockback:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_fire": true
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_player_death:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "killer",
+                  "predicate": {
+                    "type": "minecraft:player"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{da_trident_death:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "direct_killer",
+                  "predicate": {
+                    "type": "minecraft:trident"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

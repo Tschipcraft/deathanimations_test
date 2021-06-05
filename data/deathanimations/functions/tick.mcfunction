@@ -1,5 +1,6 @@
 ##by NOPEname modified by Tschipcraft
 
+
 execute as @s store result score @s x run data get entity @s Pos[0] 100
 execute as @s store result score @s y run data get entity @s Pos[1] 100
 execute as @s store result score @s z run data get entity @s Pos[2] 100
@@ -50,7 +51,3 @@ execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result en
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.015 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches ..0 store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result entity @s Motion[2] double 0.12 run scoreboard players get @s dz
-
-execute if score Global paper_fix matches 0 unless entity @s[type=zombie] run data merge entity @s {Silent:0b}
-
-execute at @s as @e[type=#deathanimations:marker_entities,distance=..5,tag=visual] if score Global enable_pickup matches 0 run data merge entity @s {DisabledSlots:4144959}

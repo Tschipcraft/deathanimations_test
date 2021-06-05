@@ -53,6 +53,8 @@
 		"#minecraft:walls",
 		"#minecraft:fences",
 		"#minecraft:slabs",
-		"#minecraft:stairs"
+		"#minecraft:stairs",
+		"minecraft:sugar_cane",
+		"#minecraft:climbable"
 	]
 }

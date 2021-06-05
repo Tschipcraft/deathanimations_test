@@ -13,6 +13,9 @@ kill @e[tag=d_a_p]
 kill @e[tag=endermite]
 kill @e[tag=low_p_mode]
 
+execute as @e[type=#deathanimations:marker_entities,tag=death_detection] at @s run function deathanimations:detection/normalise
+execute as @e[scores={initalise=0..}] at @s run function deathanimations:detection/reset_entity
+
 kill @e[tag=death_detection]
 
 kill @e[tag=ragdoll_visual_nom]
@@ -41,9 +44,19 @@ scoreboard objectives remove dy
 scoreboard objectives remove dz
 scoreboard objectives remove rotation
 scoreboard objectives remove entity_count
+scoreboard objectives remove wait
+scoreboard objectives remove da_id
 
+
+## Ragdoll
+scoreboard objectives remove da_ragdoll_t
 scoreboard objectives remove picked_up
 
+## Player death
+scoreboard objectives remove da_player_death
+
+## Lightning
+scoreboard objectives remove da_lightning
 
 scoreboard objectives remove ragdoll_rot_1
 scoreboard objectives remove ragdoll_rot_2
