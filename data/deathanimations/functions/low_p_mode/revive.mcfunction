@@ -2,7 +2,7 @@
 
 tag @s add visual
 tag @s remove low_p_mode
-execute if block ~ ~4.0 ~ #deathanimations:nonsolid run tag @s remove OnGround
+execute if block ~ ~1.0 ~ #deathanimations:nonsolid run tag @s remove OnGround
 execute as @s[tag=encode] at @s run function deathanimations:visual_correction/decode
 execute as @s[tag=skeletonbody] at @s run function deathanimations:low_p_mode/deactivate/skeleton
 execute as @s[tag=spiderbody] at @s run function deathanimations:low_p_mode/deactivate/spider
@@ -20,17 +20,20 @@ execute as @s[tag=cowbody] at @s run function deathanimations:low_p_mode/deactiv
 execute as @s[tag=blazebody] at @s run function deathanimations:low_p_mode/deactivate/blaze
 
 ##execute as @s[tag=arm,tag=skeletoncheck] positioned ~ ~1.4 ~ unless entity @e[tag=bodypart,distance=..0.1] run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Tags:[bodypart,arm,skeletoncheck],Silent:1,Invisible:1,DisabledSlots:4144959}
-execute as @s[tag=arm] at @s positioned ~ ~1.4 ~ unless entity @e[tag=bodypart,distance=..0.1,tag=arm] run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Tags:[bodypart,arm,OnGround_s],Silent:1,Invisible:1,DisabledSlots:4144959}
-execute as @s[tag=leg] at @s positioned ~ ~1.4 ~ unless entity @e[tag=bodypart,distance=..0.1,tag=leg] run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Tags:[bodypart,leg,OnGround_s],Silent:1,Invisible:1,DisabledSlots:4144959}
+execute as @s[tag=arm] at @s positioned ~ ~1.4 ~ unless entity @e[tag=bodypart,distance=..0.1,tag=arm] run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Tags:[bodypart,arm,OnGround_s,low_p_revive],Silent:1,Invisible:1,DisabledSlots:4144959}
+execute as @s[tag=leg] at @s positioned ~ ~1.4 ~ unless entity @e[tag=bodypart,distance=..0.1,tag=leg] run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Tags:[bodypart,leg,OnGround_s,low_p_revive],Silent:1,Invisible:1,DisabledSlots:4144959}
 
 
 #execute as @s[tag=fish] run summon minecraft:armor_stand ~ ~1.4 ~ {Small:1b,Tags:[bodypart,fish,zombiebody,OnGround],Silent:1,Invisible:1,DisabledSlots:4144959}
 
-execute as @s[tag=chestplate] at @s run summon minecraft:armor_stand ~ ~1.4 ~ {Small:1b,Tags:[bodypart,armor,chestplate,OnGround_s],Silent:1,Invisible:1,DisabledSlots:4144959}
+execute as @s[tag=chestplate] at @s run summon minecraft:armor_stand ~ ~1.4 ~ {Small:1b,Tags:[bodypart,armor,chestplate,OnGround_s,low_p_revive],Silent:1,Invisible:1,DisabledSlots:4144959}
+execute as @e[type=minecraft:armor_stand,tag=low_p_revive] run function deathanimations:low_p_mode/parse_bodypart
 scoreboard players set @s age 145
-scoreboard players add @e[tag=bodypart] correction 1
-scoreboard players add @e[tag=bodypart] age 2
-scoreboard players add @e[tag=visual] correction 1
+scoreboard players set @s correction 0
+scoreboard players add @e[type=minecraft:armor_stand,tag=bodypart,scores={correction=0..}] correction 1
+scoreboard players add @e[type=minecraft:armor_stand,tag=visual,scores={correction=0..}] correction 1
+say deactivate
+
 
 execute as @s[tag=!encode] at @s run function deathanimations:visual_correction/encode
 

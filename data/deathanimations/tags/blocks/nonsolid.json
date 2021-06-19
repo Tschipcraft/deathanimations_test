@@ -51,6 +51,7 @@
 		"#minecraft:trapdoors",
 		"minecraft:sugar_cane",
 		"minecraft:composter",
-		"#minecraft:climbable"
+		"#minecraft:climbable",
+		"minecraft:light"
 	]
 }

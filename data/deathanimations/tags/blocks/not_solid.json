@@ -44,7 +44,6 @@
 		"minecraft:comparator",
 		"minecraft:lava",
 		"minecraft:farmland",
-		"minecraft:grass_path",
 		"minecraft:cobweb",
 		"#minecraft:signs",
 		"#deathanimations:portals",
@@ -55,6 +54,7 @@
 		"#minecraft:slabs",
 		"#minecraft:stairs",
 		"minecraft:sugar_cane",
-		"#minecraft:climbable"
+		"#minecraft:climbable",
+		"minecraft:light"
 	]
 }

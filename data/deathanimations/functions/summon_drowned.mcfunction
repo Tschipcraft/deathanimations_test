@@ -56,6 +56,4 @@ function deathanimations:summon/special_nbt
 
 ##function deathanimations:summon_soul
 
-summon area_effect_cloud ~ ~ ~ {Tags:[clearItems],NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:5}
-
 kill @s[type=!player]

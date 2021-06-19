@@ -37,10 +37,15 @@ execute if entity @s[tag=iron_golem] store result entity @s Motion[0] double 0.0
 ##execute if entity @s[tag=iron_golem] if score @s dy matches ..0 store result entity @s Motion[1] double 0.01 run scoreboard players get @s dy
 execute if entity @s[tag=iron_golem] store result entity @s Motion[2] double 0.04 run scoreboard players get @s dz
 
-execute if entity @s[tag=arrowed] store result entity @s Motion[0] double 0.15 run scoreboard players get @s dx
-execute if entity @s[tag=arrowed] if score @s dy matches 0.. store result entity @s Motion[1] double 0.25 run scoreboard players get @s dy
+execute if entity @s[tag=arrowed] store result entity @s Motion[0] double 0.05 run scoreboard players get @s dx
+execute if entity @s[tag=arrowed] if score @s dy matches 0.. store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
 execute if entity @s[tag=arrowed] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
-execute if entity @s[tag=arrowed] store result entity @s Motion[2] double 0.15 run scoreboard players get @s dz
+execute if entity @s[tag=arrowed] store result entity @s Motion[2] double 0.05 run scoreboard players get @s dz
+
+execute if entity @s[tag=da_trident_death] store result entity @s Motion[0] double 0.15 run scoreboard players get @s dx
+execute if entity @s[tag=da_trident_death] if score @s dy matches 0.. store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
+execute if entity @s[tag=da_trident_death] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
+execute if entity @s[tag=da_trident_death] store result entity @s Motion[2] double 0.15 run scoreboard players get @s dz
 
 execute if entity @s[tag=exploded] store result entity @s Motion[0] double 0.4 run scoreboard players get @s dx
 execute if entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.25 run scoreboard players get @s dy
@@ -48,6 +53,6 @@ execute if entity @s[tag=exploded] if score @s dy matches ..0 store result entit
 execute if entity @s[tag=exploded] store result entity @s Motion[2] double 0.4 run scoreboard players get @s dz
 
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result entity @s Motion[0] double 0.12 run scoreboard players get @s dx
-execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.015 run scoreboard players get @s dy
+execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches ..0 store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result entity @s Motion[2] double 0.12 run scoreboard players get @s dz

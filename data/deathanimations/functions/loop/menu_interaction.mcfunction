@@ -1,6 +1,7 @@
 ## by Tschipcraft
 
 scoreboard players enable @a menu
+scoreboard players enable @a troubleshoot
 scoreboard players add @a da_welcome 0
 execute as @a[scores={menu=1..60,da_welcome=1}] run scoreboard players set @s da_welcome 0
 execute as @a[scores={da_welcome=0}] run function deathanimations:messages/welcome
@@ -11,6 +12,8 @@ execute as @a[scores={menu=61..}] run scoreboard players set @s da_welcome 1
 scoreboard players reset @a[scores={menu=122..}] menu
 scoreboard players add @a[scores={menu=1..}] menu 1
 
+execute as @a[scores={troubleshoot=1}] run function deathanimations:compatibility/y_lag
+scoreboard players reset @a[scores={troubleshoot=1..}] troubleshoot
 
 ## settings
 execute as @a unless entity @s[scores={blood_local=0..1}] run scoreboard players set @s blood_local 3

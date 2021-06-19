@@ -75,6 +75,8 @@ scoreboard objectives remove da_welcome
 scoreboard objectives remove da_how_to_use
 scoreboard objectives remove d_launcher
 scoreboard objectives remove ragdoll_zombie
+scoreboard objectives remove troubleshoot
+
 
 say Uninstalled Death Animations by Tschipcraft!
 

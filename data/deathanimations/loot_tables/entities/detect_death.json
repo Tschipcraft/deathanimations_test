@@ -317,6 +317,16 @@
             },
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_is_baby:1b}",
+              "conditions": [
+				{
+                  "condition": "minecraft:reference",
+                  "name": "deathanimations:is_baby"
+                }
+			  ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_custom_head:1b}",
               "conditions": [
                 {
@@ -340,6 +350,11 @@
                 {
                   "source": "ActiveEffects",
                   "target": "ActiveEffects",
+                  "op": "replace"
+                },
+				{
+                  "source": "Fire",
+                  "target": "Fire",
                   "op": "replace"
                 },
                 {

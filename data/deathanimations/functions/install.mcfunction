@@ -29,6 +29,7 @@ scoreboard objectives add da_id dummy
 scoreboard objectives add menu trigger
 scoreboard objectives add da_welcome trigger
 scoreboard objectives add da_how_to_use trigger
+scoreboard objectives add troubleshoot trigger
 
 scoreboard objectives add pick_up dummy
 scoreboard objectives add ragdoll_click minecraft.used:minecraft.carrot_on_a_stick
@@ -88,3 +89,6 @@ execute unless score Global auto_crafting matches 0..1 run scoreboard players se
 execute unless score Global paper_fix matches 0..1 run scoreboard players set Global paper_fix 0
 execute unless score Global ragdoll_zombie matches 0..1 run scoreboard players set Global ragdoll_zombie 0
 execute unless score Global part_lifetime matches 0..3 run scoreboard players set Global part_lifetime 1
+
+## Compatibility
+execute at @r run schedule function deathanimations:compatibility/core 3s

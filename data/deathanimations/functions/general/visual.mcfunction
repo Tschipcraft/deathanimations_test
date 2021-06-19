@@ -7,10 +7,10 @@ execute as @s[scores={b_test=0}] at @e[type=#deathanimations:marker_entities,tag
 execute as @s[scores={b_test=0}] at @e[type=#deathanimations:marker_entities,tag=bodypart,sort=random,distance=..50,tag=!lame_bodypart] if score @s correction = @e[type=#deathanimations:marker_entities,tag=bodypart,sort=nearest,limit=1] correction run function deathanimations:visual_correction/found
 
 #execute if score Global part_lifetime matches 1.. as @s[scores={b_test=0}] at @s run function deathanimations:animation/evaporate
-execute as @s[scores={b_test=0},tag=!playerbody] at @s run function deathanimations:low_p_mode/activate
-execute as @s[scores={b_test=0},tag=!playerbody] at @s run function deathanimations:low_p_mode/deactivate
+#execute as @s[scores={b_test=0},tag=!playerbody] at @s run function deathanimations:low_p_mode/activate
+execute as @s[scores={b_test=0},tag=!playerbody] unless entity @s[scores={age=145..150}] at @s run function deathanimations:low_p_mode/revive
 
-execute as @s[tag=!playerbody] unless score Global part_lifetime matches 0 as @s[scores={timeout_parts=500..}] at @s run function deathanimations:low_p_mode/activate
+execute as @s[tag=!playerbody,tag=OnGround] unless score Global part_lifetime matches 0 as @s[scores={timeout_parts=500..}] at @s run function deathanimations:low_p_mode/activate
 #execute if score Global part_lifetime matches 0 as @s[scores={timeout_parts=500..}] at @s run function deathanimations:low_p_mode/activate
 
 #kill @s[scores={b_test=0}]

@@ -18,7 +18,7 @@ execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core,scores={ag
 execute as @e[type=#deathanimations:ragdoll_entities,tag=ragdoll_core,scores={age=60..}] at @s unless entity @a[gamemode=!spectator,distance=..10] run function deathanimations:ragdoll/freeze/freeze
 
 ## clearing bodyparts
-scoreboard players set @e[type=#deathanimations:marker_entities,tag=bodypart,tag=!lame_bodypart,tag=!iron_golem,tag=!ravager] b_test 0
+scoreboard players set @e[type=#deathanimations:marker_entities,tag=bodypart,tag=!lame_bodypart,tag=!iron_golem,tag=!ravager,scores={correction=0..}] b_test 0
 execute as @e[type=#deathanimations:marker_entities,tag=bodypart,tag=!iron_golem,tag=!lame_bodypart,tag=!ravager] at @s at @e[type=#deathanimations:marker_entities,tag=visual,sort=random,distance=..30] if score @s correction = @e[type=#deathanimations:marker_entities,tag=bodypart,sort=nearest,limit=1] correction run scoreboard players set @s b_test 1
 execute as @e[type=#deathanimations:marker_entities,tag=bodypart,scores={b_test=0}] at @s run function deathanimations:general/body_test
 kill @e[type=#deathanimations:marker_entities,tag=bodypart,scores={b_test=0}]
