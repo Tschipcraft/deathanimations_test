@@ -38,7 +38,7 @@ execute as @s at @s positioned ~ ~0.20 ~ run summon armor_stand ^ ^ ^ {NoGravity
 scoreboard players add @e[tag=visual] correction 1
 
 
-particle minecraft:block sand ~ ~ ~ 0 0.3 0 1 100 normal @a[scores={blood_local=1}]
+particle minecraft:block sand ~ ~1 ~ 0.2 0.4 0.2 1 45 normal @a[scores={blood_local=1}]
 
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:block magma_block ~ ~1 ~ 0.2 0.4 0.2 0 300 normal
 execute as @s at @s if entity @s[scores={OnFire=1}] run particle minecraft:falling_dust obsidian ~ ~1 ~ 0.2 0.5 0.2 0 250 normal

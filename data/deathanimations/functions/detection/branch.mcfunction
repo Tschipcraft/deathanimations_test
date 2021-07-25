@@ -8,8 +8,9 @@ execute as @s[nbt={Item:{tag:{da_entity:cave_spider}}}] at @s run function death
 execute as @s[nbt={Item:{tag:{da_entity:creeper}}}] at @s run function deathanimations:summon_creeper
 execute as @s[nbt={Item:{tag:{da_entity:phantom}}}] at @s run function deathanimations:summon_phantom
 
-execute as @s[nbt={Item:{tag:{da_entity:zombie,da_ragdoll:1b}}}] at @s positioned ~ ~1 ~ run function deathanimations:ragdoll_create_zombie
+execute as @s[nbt={Item:{tag:{da_entity:zombie,da_ragdoll:1b}}}] unless data entity @s {Item:{tag:{da_is_baby:1b}}} at @s positioned ~ ~1 ~ run function deathanimations:ragdoll_create_zombie
 execute as @s[nbt={Item:{tag:{da_entity:zombie}}}] unless entity @s[nbt={Item:{tag:{da_ragdoll:1b}}}] at @s run function deathanimations:summon_zombie
+execute as @s[nbt={Item:{tag:{da_entity:zombie}}}] if entity @s[nbt={Item:{tag:{da_ragdoll:1b}}}] if data entity @s {Item:{tag:{da_is_baby:1b}}} at @s run function deathanimations:summon_zombie
 execute as @s[nbt={Item:{tag:{da_entity:husk}}}] at @s run function deathanimations:summon_husk
 execute as @s[nbt={Item:{tag:{da_entity:drowned}}}] at @s run function deathanimations:summon_drowned
 

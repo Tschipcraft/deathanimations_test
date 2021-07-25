@@ -42,7 +42,7 @@ execute as @s[type=minecraft:iron_golem] at @s run function deathanimations:dete
 
 execute as @s[type=minecraft:ravager] at @s run function deathanimations:detection/ravager
 
-execute as @s[type=blaze] at @s run function deathanimations:detection/blaze
+#execute as @s[type=blaze] at @s run function deathanimations:detection/blaze
 
 
 ##execute as @s[type=tropical_fish] at @s run summon minecraft:armor_stand ~ ~ ~ {Small:1,Silent:1,Invisible:1,Marker:1,NoGravity:1,Tags:[tropical_fish_death,death_detection]}

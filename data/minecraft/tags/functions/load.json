@@ -1,5 +1,6 @@
 {
   "values": [
-    "deathanimations:d_reset_l"
+    "deathanimations:install_trigger",
+    "deathanimations:compatibility/version_checker"
   ]
 }

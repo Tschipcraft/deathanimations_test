@@ -75,9 +75,10 @@ execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=10..11
 
 scoreboard players reset @e[type=#deathanimations:lightning_animation,scores={da_lightning=12..}] da_lightning
 
+function deathanimations:117_addon
 
 ## Player Death Animations
-execute as @a[scores={da_player_death=1..}] at @s run function deathanimations:player/main
+#execute as @a[scores={da_player_death=1..}] at @s run function deathanimations:player/main
 
 
 ## ragdolls

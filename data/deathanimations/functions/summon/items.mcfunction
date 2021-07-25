@@ -15,9 +15,9 @@ data modify entity @e[type=minecraft:armor_stand,tag=visual,scores={correction=1
 execute if data entity @s Item.tag.da_custom_head run kill @e[type=minecraft:armor_stand,tag=visual,tag=head,scores={correction=2..7},limit=1]
 execute if data entity @s Item.tag.da_custom_head as @e[tag=visual,scores={correction=1},limit=1] run tag @s remove armor
 execute if data entity @s Item.tag.da_custom_head as @e[tag=bodypart,scores={correction=1},limit=1] run tag @s remove armor
-execute if entity @s[tag=custom_head,tag=!skeleton_death,tag=!stray_death,tag=!wither_skeleton_death,tag=!husk_death,tag=!drowned_death] as @e[tag=visual,scores={correction=1},limit=1] run tag @s add bloody
-execute if entity @s[tag=custom_head,tag=husk_death] as @e[tag=visual,scores={correction=1},limit=1] run tag @s add sandy
-execute if entity @s[tag=custom_head,tag=drowned_death] as @e[tag=visual,scores={correction=1},limit=1] run tag @s add watery
+execute if data entity @s Item.tag.da_custom_head unless data entity @s {Item:{tag:{da_entity:skeleton}}} unless data entity @s {Item:{tag:{da_entity:wither_skeleton}}} unless data entity @s {Item:{tag:{da_entity:husk}}} unless data entity @s {Item:{tag:{da_entity:drowned}}} as @e[tag=visual,scores={correction=1},limit=1] run tag @s add bloody
+execute if data entity @s Item.tag.da_custom_head if data entity @s {Item:{tag:{da_entity:husk}}} as @e[tag=visual,scores={correction=1},limit=1] run tag @s add sandy
+execute if data entity @s Item.tag.da_custom_head if data entity @s {Item:{tag:{da_entity:drowned}}} as @e[tag=visual,scores={correction=1},limit=1] run tag @s add watery
 
 ## chestplate
 execute as @s at @s positioned ~ ~0.50 ~ run summon minecraft:armor_stand ^ ^ ^0.1 {Small:1b,Tags:[bodypart,chestplate,armor],Silent:1,Invisible:1,DisabledSlots:4144959}

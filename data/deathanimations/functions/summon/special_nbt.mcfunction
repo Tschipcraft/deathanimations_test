@@ -15,4 +15,8 @@ data modify storage d_a:detection Fire set from entity @s Item.tag.Fire
 execute as @e[type=minecraft:armor_stand,tag=visual,scores={da_id=1}] run data modify entity @s Fire set from storage d_a:detection Fire
 
 
+#data modify storage d_a:detection ActiveEffects set from entity @s Item.tag.ActiveEffects
+#execute as @e[type=minecraft:armor_stand,tag=visual,scores={da_id=1}] run data modify entity @s ActiveEffects set from storage d_a:detection ActiveEffects
+
+
 kill @s[type=minecraft:item]

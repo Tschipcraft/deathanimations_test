@@ -49,7 +49,6 @@
 		"#minecraft:walls",
 		"#minecraft:fences",
 		"minecraft:sugar_cane",
-		"#minecraft:climbable",
-		"minecraft:light"
+		"#minecraft:climbable"
 	]
 }

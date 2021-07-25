@@ -72,6 +72,7 @@ scoreboard objectives add paper_fix dummy
 scoreboard objectives add part_lifetime dummy
 scoreboard objectives add ragdoll_zombie dummy
 scoreboard objectives add blood_global dummy
+scoreboard objectives add da_mode dummy
 scoreboard players enable @a blood_local_off
 scoreboard players enable @a blood_local_on
 scoreboard players enable @a menu
@@ -82,6 +83,10 @@ scoreboard objectives add da_v dummy
 scoreboard players set Global da_v 11
 
 ## set defaults
+execute if score Global enable_drops matches 0 if score Global enable_pickup matches 0 unless score Global da_mode matches 0..3 run scoreboard players set Global da_mode 2
+execute if score Global enable_drops matches 0..1 if score Global enable_pickup matches 1 unless score Global da_mode matches 0..3 run scoreboard players set Global da_mode 3
+execute unless score Global da_mode matches 0..3 run scoreboard players set Global da_mode 0
+
 execute unless score Global blood_global matches 0..1 run scoreboard players set Global blood_global 1
 execute unless score Global enable_drops matches 0..1 run scoreboard players set Global enable_drops 1
 execute unless score Global enable_pickup matches 0..1 run scoreboard players set Global enable_pickup 1
@@ -89,6 +94,8 @@ execute unless score Global auto_crafting matches 0..1 run scoreboard players se
 execute unless score Global paper_fix matches 0..1 run scoreboard players set Global paper_fix 0
 execute unless score Global ragdoll_zombie matches 0..1 run scoreboard players set Global ragdoll_zombie 0
 execute unless score Global part_lifetime matches 0..3 run scoreboard players set Global part_lifetime 1
+
+
 
 ## Compatibility
 execute at @r run schedule function deathanimations:compatibility/core 3s

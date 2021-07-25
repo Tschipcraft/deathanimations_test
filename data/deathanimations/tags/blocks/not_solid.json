@@ -54,7 +54,6 @@
 		"#minecraft:slabs",
 		"#minecraft:stairs",
 		"minecraft:sugar_cane",
-		"#minecraft:climbable",
-		"minecraft:light"
+		"#minecraft:climbable"
 	]
 }

@@ -32,7 +32,7 @@ scoreboard players set @s age 145
 scoreboard players set @s correction 0
 scoreboard players add @e[type=minecraft:armor_stand,tag=bodypart,scores={correction=0..}] correction 1
 scoreboard players add @e[type=minecraft:armor_stand,tag=visual,scores={correction=0..}] correction 1
-say deactivate
+#say deactivate
 
 
 execute as @s[tag=!encode] at @s run function deathanimations:visual_correction/encode
