@@ -395,7 +395,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{da_ragdoll:1b,da_void:1b}",
+              "tag": "{da_void:1b}",
               "conditions": [
                 {
                   "condition": "minecraft:damage_source_properties",
