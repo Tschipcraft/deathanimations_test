@@ -1,8 +1,0 @@
-## by Tschipcraft
-
-execute as @s[type=#deathanimations:marker_entities,tag=arm] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=arm,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Head[0] float -1 run scoreboard players get @s rotation
-execute as @s[type=#deathanimations:marker_entities,tag=torso] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=torso,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Head[0] float 1 run scoreboard players get @s rotation
-execute as @s[type=#deathanimations:marker_entities,tag=leg] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=leg,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Head[0] float -1 run scoreboard players get @s rotation
-execute as @s[type=#deathanimations:marker_entities,tag=head] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=head,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Head[0] float -1 run scoreboard players get @s rotation
-execute as @s[type=#deathanimations:marker_entities,tag=item] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=item,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Head[0] float 1 run scoreboard players get @s rotation
-execute as @s[type=#deathanimations:marker_entities,tag=chestplate] at @s positioned ~ ~-1.4 ~ store result entity @e[type=#deathanimations:marker_entities,tag=chestplate,tag=visual,distance=..2,sort=nearest,limit=1] Pose.Body[0] float -1 run scoreboard players get @s rotation
