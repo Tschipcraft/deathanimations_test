@@ -18,7 +18,7 @@ Unique animations are available for Iron Golems, Phantoms, Endermites and Ravage
 Make sure to adjust the data pack for your needs by opening the settings (`/trigger settings`)
 
 
-## Installation
+## Installation (soon)
 
 Download the latest release from [here](https://github.com/Tschipcraft/deathanimations/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
