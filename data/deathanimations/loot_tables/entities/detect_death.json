@@ -10,6 +10,58 @@
           "functions": [
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_entity:allay}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:allay"
+                  }
+                }
+              ]
+            },
+            {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{da_entity:phantom}",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "type": "minecraft:phantom"
+                        }
+                      }
+                    ]
+                  },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:armor_stand}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:armor_stand"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:axolotl}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:axolotl"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_entity:blaze}",
               "conditions": [
                 {
@@ -17,6 +69,19 @@
                   "entity": "this",
                   "predicate": {
                     "type": "minecraft:blaze"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:cat}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:cat"
                   }
                 }
               ]
@@ -43,6 +108,19 @@
                   "entity": "this",
                   "predicate": {
                     "type": "minecraft:chicken"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:cod}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:cod"
                   }
                 }
               ]
@@ -88,13 +166,13 @@
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:endermite}",
+              "tag": "{da_entity:enderman}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:endermite"
+                    "type": "minecraft:enderman"
                   }
                 }
               ]
@@ -114,6 +192,32 @@
             },
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_entity:frog}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:frog"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:goat}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:goat"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_entity:husk}",
               "conditions": [
                 {
@@ -127,26 +231,26 @@
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:iron_golem}",
+              "tag": "{da_entity:illusioner}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:iron_golem"
+                    "type": "minecraft:illusioner"
                   }
                 }
               ]
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:phantom}",
+              "tag": "{da_entity:ocelot}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:phantom"
+                    "type": "minecraft:ocelot"
                   }
                 }
               ]
@@ -166,6 +270,32 @@
             },
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_entity:piglin}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:piglin"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:piglin_brute}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:piglin_brute"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_entity:pillager}",
               "conditions": [
                 {
@@ -179,13 +309,26 @@
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:ravager}",
+              "tag": "{da_entity:rabbit}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:ravager"
+                    "type": "minecraft:rabbit"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:salmon}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:salmon"
                   }
                 }
               ]
@@ -218,6 +361,32 @@
             },
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_entity:skeleton_horse}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:skeleton_horse"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:snow_golem}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:snow_golem"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_entity:spider}",
               "conditions": [
                 {
@@ -244,13 +413,39 @@
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:villager}",
+              "tag": "{da_entity:tadpole}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:villager"
+                    "type": "minecraft:tadpole"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:tropical_fish}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:tropical_fish"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:turtle}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:turtle"
                   }
                 }
               ]
@@ -270,6 +465,19 @@
             },
 			{
               "function": "minecraft:set_nbt",
+              "tag": "{da_entity:wither}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:wither"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
               "tag": "{da_entity:wither_skeleton}",
               "conditions": [
                 {
@@ -277,6 +485,19 @@
                   "entity": "this",
                   "predicate": {
                     "type": "minecraft:wither_skeleton"
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_nbt",
+              "tag": "{da_entity:zombie}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:zombie"
                   }
                 }
               ]
@@ -296,13 +517,13 @@
             },
 			{
               "function": "minecraft:set_nbt",
-              "tag": "{da_entity:zombie}",
+              "tag": "{da_entity:zombified_piglin}",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "type": "minecraft:zombie"
+                    "type": "minecraft:zombified_piglin"
                   }
                 }
               ]
@@ -395,7 +616,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{da_void:1b}",
+              "tag": "{da_ragdoll:1b,da_void:1b}",
               "conditions": [
                 {
                   "condition": "minecraft:damage_source_properties",

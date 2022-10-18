@@ -1,4 +1,5 @@
-## by Tschipcraft
+##by Tschipcraft
+# Displays particles for the given visual entity (~ ~ ~/~ ~/@s = visual entity)
 
 execute as @s[tag=torso,tag=bloody] positioned ^ ^ ^ run particle minecraft:block redstone_block ~ ~1.5 ~ 0.1 0 0.1 1 1 normal @a[scores={blood_local=1}]
 execute as @s[tag=head,tag=bloody] positioned ^ ^0.35 ^ run particle minecraft:block redstone_block ~ ~1.1 ~ 0.01 0 0.01 1 1 normal @a[scores={blood_local=1}]

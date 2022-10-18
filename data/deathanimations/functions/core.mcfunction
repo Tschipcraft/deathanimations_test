@@ -1,5 +1,9 @@
 #### by Tschipcraft
 
+# Get player motion
+execute as @a[gamemode=!spectator] at @s run function deathanimations:general/get_player_motion
+
+
 ### welcome & Menu
 # now in /loops
 
@@ -7,17 +11,18 @@
 ## auto crafting
 execute if score Global auto_crafting matches 1 if score Global enable_pickup matches 1 as @a[gamemode=!spectator] run function deathanimations:auto_crafting/core
 
-## reset data pack
-scoreboard players add Global age 1
-execute if score Global part_lifetime matches ..2 if score Global age matches 1599.. if score Global entity_count matches 0 unless entity @e[type=#deathanimations:marker_entities,tag=endermite] unless entity @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] unless entity @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] unless entity @e[type=item,nbt={Item:{tag:{da_death_detect:1b}}}] run function deathanimations:reset
-execute if score Global age matches 1599.. run scoreboard players set Global age 1
+## Reset data pack
+#scoreboard players add Global age 1
+#execute if score Global part_lifetime matches ..2 if score Global age matches 1599.. if score Global entity_count matches 0 unless entity @e[type=#deathanimations:marker_entities,tag=endermite] unless entity @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] unless entity @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] unless entity @e[type=item,nbt={Item:{tag:{da_death_detect:1b}}}] run function deathanimations:reset
+#execute if score Global age matches 1599.. run scoreboard players set Global age 1
 
+# Fail safe
 execute unless score Global part_lifetime matches 3 if score global entity_count matches 100.. run function deathanimations:reset
 
 
 ### Entity Detection
 
-execute as @e[type=minecraft:item,nbt={Item:{tag:{da_death_detect:1b}}},limit=5,sort=arbitrary] at @s run function deathanimations:detection/branch
+execute as @e[type=minecraft:item,nbt={Item:{tag:{da_death_detect:1b}}},limit=5,sort=arbitrary] at @s rotated as @s run function deathanimations:detection/branch
 
 ## Detect new entities
 # Now in /loops
@@ -26,8 +31,8 @@ execute if score events entity_count matches ..50 as @a[gamemode=!spectator,limi
 
 ## Summon body parts
 
-execute as @e[type=#deathanimations:marker_entities,tag=death_detection,limit=150] at @s rotated as @s run function deathanimations:general/detection
-execute as @e[type=#deathanimations:marker_entities,tag=death_detection] at @s run function deathanimations:general/special_nbt_detection
+#execute as @e[type=#deathanimations:marker_entities,tag=death_detection] at @s rotated as @s run function deathanimations:general/detection
+#execute as @e[type=#deathanimations:marker_entities,tag=death_detection] at @s run function deathanimations:general/special_nbt_detection
 
 ## Animationtimer
 scoreboard players add @e[type=#deathanimations:marker_entities] cooldown 0
@@ -58,39 +63,38 @@ execute at @r as @e[type=phantom,tag=explode,sort=nearest,limit=6] run function 
 execute if entity @e[type=#deathanimations:marker_entities,tag=endermite] as @a[nbt={Inventory:[{id:"minecraft:chorus_fruit",tag:{CustomModelData:3}}]}] at @s run function deathanimations:replace
 
 
-### Ragdolls
-execute if entity @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] run function deathanimations:ragdoll/core/main
-
-### Lightning
-execute as @e[type=#deathanimations:lightning_animation] at @s if entity @e[type=minecraft:lightning_bolt,distance=..1] run scoreboard players set @s da_lightning 1
+### Lightning; WIP
+execute as @e[type=#deathanimations:lightning_animation] at @s if entity @e[type=minecraft:lightning_bolt,distance=..2] run scoreboard players set @s da_lightning 1
 scoreboard players add @e[type=#deathanimations:lightning_animation,scores={da_lightning=1..}] da_lightning 1
 
-execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=1..10}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:1b,tag:{CustomModelData:1}}
-execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=2}] run effect give @s minecraft:invisibility 1 0 true
+#execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=1..10}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:1b,tag:{CustomModelData:1}}
+#execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=2}] run effect give @s minecraft:invisibility 1 0 true
 
-execute as @e[type=#deathanimations:lightning_skeleton,scores={da_lightning=1..10}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:1b,tag:{CustomModelData:2}}
+#execute as @e[type=#deathanimations:lightning_skeleton,scores={da_lightning=1..10}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:1b,tag:{CustomModelData:2}}
 
-execute as @e[type=#deathanimations:lightning_animation,scores={da_lightning=10..11}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:0b}
-execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=10..11}] run effect clear @s minecraft:invisibility
+#execute as @e[type=#deathanimations:lightning_animation,scores={da_lightning=10..11}] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:jigsaw",Count:0b}
+#execute as @e[type=#deathanimations:lightning_zombie,scores={da_lightning=10..11}] run effect clear @s minecraft:invisibility
 
 scoreboard players reset @e[type=#deathanimations:lightning_animation,scores={da_lightning=12..}] da_lightning
 
 function deathanimations:117_addon
 
-## Player Death Animations
+### Player Death Animations
 #execute as @a[scores={da_player_death=1..}] at @s run function deathanimations:player/main
 
 
-## ragdolls
-execute if score Global part_lifetime matches ..2 run scoreboard players add @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] timeout_parts 1
-execute if score Global part_lifetime matches 2.. run scoreboard players add @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] timeout_parts 0
+### Ragdolls; need rewrite
+execute if entity @e[type=#deathanimations:ragdoll_entities,tag=ragdoll] run function deathanimations:ragdoll/core/main
 
-execute as @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] at @s run function deathanimations:ragdoll/nomotion
+#execute if score Global part_lifetime matches ..2 run scoreboard players add @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] timeout_parts 1
+#execute if score Global part_lifetime matches 2.. run scoreboard players add @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] timeout_parts 0
+
+#execute as @e[type=#deathanimations:marker_entities,tag=ragdoll_visual_nom] at @s run function deathanimations:ragdoll/nomotion
 
 ### Arrows
 ## Ragdoll on bow shot
-execute as @e[type=#deathanimations:marker_entities,tag=death_detection,tag=!arrowed] at @s if entity @e[tag=arrow,distance=..4] run tag @s add arrowed
-execute as @e[type=#deathanimations:marker_entities,tag=death_detection,tag=arrowed] at @s unless entity @e[tag=arrow,distance=..4] run tag @s remove arrowed
+#execute as @e[type=#deathanimations:marker_entities,tag=death_detection,tag=!arrowed] at @s if entity @e[tag=arrow,distance=..4] run tag @s add arrowed
+#execute as @e[type=#deathanimations:marker_entities,tag=death_detection,tag=arrowed] at @s unless entity @e[tag=arrow,distance=..4] run tag @s remove arrowed
 
 execute as @e[type=#deathanimations:marker_entities,tag=arrow,nbt={Age:1}] at @s unless entity @e[type=#deathanimations:projectiles,distance=..3] run particle minecraft:item minecraft:redstone_block ~ ~ ~ 0 0 0 0.1 10 normal @a[scores={blood_local=1}]
 

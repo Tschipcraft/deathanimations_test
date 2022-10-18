@@ -1,30 +1,34 @@
 ## by Tschipcraft
 
-## correction for calculations
+
+## Position correction
 
 execute as @s[type=#deathanimations:marker_entities,tag=animal_death] at @s run tp @s ~ ~-0.15 ~
 # Small
 execute as @s[type=#deathanimations:marker_entities,tag=correct,nbt={Small:1b}] at @s run tp @s ~ ~0.73 ~
 
-execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:visual_correction/decode
+#execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:visual_correction/decode
 
 
-
-## general stuff
-scoreboard players add @s[type=#deathanimations:marker_entities,tag=arrow] age 1
-
+# Arrow effect cloud
+#scoreboard players add @s[type=#deathanimations:marker_entities,tag=arrow] age 1
 
 
-execute as @s[type=#deathanimations:marker_entities,tag=bodypart] at @s run function deathanimations:general/main
-execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:general/main
+#execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:general/main
+#execute as @s[type=#deathanimations:marker_entities,tag=bodypart] at @s run function deathanimations:general/main
+
+
+# Bodypart entity
+execute as @s[type=#deathanimations:marker_entities,tag=bodypart] at @s run function deathanimations:general/bodypart/core
+
 #execute unless entity @e[type=#deathanimations:marker_entities,tag=bodypart] if entity @e[type=#deathanimations:marker_entities,tag=visual] run function deathanimations:general/main
-execute as @s[type=#deathanimations:marker_entities,tag=lame_death,scores={cooldown=..1}] at @s run function deathanimations:lame_death
 
+# Lame Death (won't exist after rewrite prob)
+#execute as @s[type=#deathanimations:marker_entities,tag=lame_death,scores={cooldown=..1}] at @s run function deathanimations:lame_death
 
-## Normal death rotation
 #scoreboard players add @e[type=#deathanimations:marker_entities,tag=!endermite,scores={cooldown=1..}] cooldown 1
 
-execute as @s[type=#deathanimations:marker_entities,tag=lame_death] run function deathanimations:animation/lame_death
+#execute as @s[type=#deathanimations:marker_entities,tag=lame_death] run function deathanimations:animation/lame_death
 
 
 ## Special Animations
@@ -45,13 +49,13 @@ execute as @s[type=#deathanimations:marker_entities,tag=low_p_mode,tag=torso,sco
 execute as @s[type=#deathanimations:marker_entities,tag=bodypart,scores={timeout_parts=855..}] at @s run tp @s ~ ~-0.0031 ~
 execute as @s[type=#deathanimations:marker_entities,tag=low_p_mode,scores={timeout_parts=855..}] at @s run tp @s ~ ~-0.0031 ~
 execute as @s[type=#deathanimations:marker_entities,tag=bodypart,scores={timeout_parts=855..},tag=ravager] at @s run tp @s ~ ~-0.007 ~
-kill @s[type=minecraft:armor_stand,scores={timeout_parts=951..}]
+kill @s[type=minecraft:armor_stand,tag=low_p_mode,scores={timeout_parts=951..}]
 
 
 #execute if score Global part_lifetime matches ..2 run kill @e[type=armor_stand,scores={age=1599..}]
 #execute if score Global part_lifetime matches 3.. run kill @e[type=armor_stand,scores={age=95999..}]
 
-## remove Lag (Partly in /loop/remove_lag)
+## Remove Lag (Partly in /loop/remove_lag)
 
 #execute if score Global part_lifetime matches 2 store result score low_p_entities entity_count run execute if entity @e[type=#deathanimations:marker_entities,tag=low_p_mode]
 #execute if score Global part_lifetime matches 2 if score low_p_entities entity_count matches 20.. run scoreboard players add @e[type=#deathanimations:marker_entities,tag=low_p_mode] timeout_parts 1
@@ -68,10 +72,10 @@ kill @s[type=minecraft:armor_stand,scores={timeout_parts=951..}]
 #execute if score Global part_lifetime matches ..1 run execute as @e[type=#deathanimations:marker_entities,tag=low_p_mode,scores={timeout_parts=..500}] at @s run function deathanimations:low_p_mode/revive
 
 
-## visual correction
+## Visual position correction
 
 execute as @s[type=#deathanimations:marker_entities,tag=animal_death] at @s run tp @s ~ ~0.15 ~
 # Small
 execute as @s[type=#deathanimations:marker_entities,tag=correct,nbt={Small:1b}] at @s run tp @s ~ ~0.73 ~
 
-execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:visual_correction/encode
+#execute as @s[type=#deathanimations:marker_entities,tag=visual] at @s run function deathanimations:visual_correction/encode

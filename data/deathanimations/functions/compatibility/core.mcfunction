@@ -1,4 +1,4 @@
-## by Tschipcraft
+## by Tschipcraft // ADD ARMOR STAND NOGRAVITY TESTs
 
 summon armor_stand ~ ~1 ~ {Tags:[da_leg_test,exclude],Small:1b,NoGravity:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,NoBasePlate:1b}
 summon area_effect_cloud ~ ~-3 ~ {Tags:[da_leg_test],ReapplicationDelay:0,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:100,DurationOnUse:0f,PersistenceRequired:1b}

@@ -1,7 +1,10 @@
 ## by Tschipcraft
 
+# ID
+scoreboard objectives add da_sid dummy
 scoreboard objectives add correction dummy
 scoreboard objectives add lame_correction dummy
+
 scoreboard objectives add IsSpecial dummy
 scoreboard objectives add Type dummy
 scoreboard objectives add initalise dummy

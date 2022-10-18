@@ -13,7 +13,7 @@ execute as @s store result score @s dz run data get entity @s Pos[2] 100
 
 scoreboard players operation @s dx -= @s x
 scoreboard players operation @s dy -= @s y
-scoreboard players operation @s dy += @s staticy
+#scoreboard players operation @s dy += @s staticy
 scoreboard players operation @s dz -= @s z
 
 
@@ -37,15 +37,17 @@ execute if entity @s[tag=iron_golem] store result entity @s Motion[0] double 0.0
 ##execute if entity @s[tag=iron_golem] if score @s dy matches ..0 store result entity @s Motion[1] double 0.01 run scoreboard players get @s dy
 execute if entity @s[tag=iron_golem] store result entity @s Motion[2] double 0.04 run scoreboard players get @s dz
 
-execute if entity @s[tag=arrowed] store result entity @s Motion[0] double 0.05 run scoreboard players get @s dx
-execute if entity @s[tag=arrowed] if score @s dy matches 0.. store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
-execute if entity @s[tag=arrowed] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
-execute if entity @s[tag=arrowed] store result entity @s Motion[2] double 0.05 run scoreboard players get @s dz
-
 execute if entity @s[tag=da_trident_death] store result entity @s Motion[0] double 0.15 run scoreboard players get @s dx
 execute if entity @s[tag=da_trident_death] if score @s dy matches 0.. store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=da_trident_death] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
 execute if entity @s[tag=da_trident_death] store result entity @s Motion[2] double 0.15 run scoreboard players get @s dz
+
+# Detect shot parts
+execute if entity @s[tag=arrowed] at @s positioned ~-2.0 ~0.5 ~-2.0 if entity @e[type=#deathanimations:marker_entities,tag=arrow,dx=4,dy=0.2,dz=4] run say You hit me!
+execute if entity @s[tag=arrowed] at @s positioned ~-2.0 ~0.5 ~-2.0 if entity @e[type=#deathanimations:marker_entities,tag=arrow,dx=4,dy=0.2,dz=4] store result entity @s Motion[0] double 0.17 run scoreboard players get @s dx
+execute if entity @s[tag=arrowed] at @s positioned ~-2.0 ~0.5 ~-2.0 if entity @e[type=#deathanimations:marker_entities,tag=arrow,dx=4,dy=0.2,dz=4] if score @s dy matches 0.. store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
+execute if entity @s[tag=arrowed] at @s positioned ~-2.0 ~0.5 ~-2.0 if entity @e[type=#deathanimations:marker_entities,tag=arrow,dx=4,dy=0.2,dz=4] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
+execute if entity @s[tag=arrowed] at @s positioned ~-2.0 ~0.5 ~-2.0 if entity @e[type=#deathanimations:marker_entities,tag=arrow,dx=4,dy=0.2,dz=4] store result entity @s Motion[2] double 0.17 run scoreboard players get @s dz
 
 execute if entity @s[tag=exploded] store result entity @s Motion[0] double 0.4 run scoreboard players get @s dx
 execute if entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.25 run scoreboard players get @s dy

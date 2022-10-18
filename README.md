@@ -3,6 +3,10 @@
 ![icon](pack.png)
 > A data pack for 1.14x-1.19x
 
+> THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR!
+
+[Current state](https://tschipcraft.ddns.net/en//deathanimations-experimental.html)
+
 ## Features
 
 Mobs have new, epic animations when they die.
@@ -20,7 +24,7 @@ Make sure to adjust the data pack for your needs by opening the settings (`/trig
 
 ## Installation (soon)
 
-Download the latest release from [here](https://github.com/Tschipcraft/deathanimations/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
+Download the latest release from [here](https://github.com/Tschipcraft/deathanimations_test/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
 
 ## Updates

@@ -14,6 +14,61 @@
       "entries": [
 		{
           "type": "minecraft:loot_table",
+          "name": "minecraft:entities/phantom",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:phantom"
+              }
+            }
+          ]
+        },
+    {
+      "rolls": 1,
+      "entries": [
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/allay",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:allay"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:armor_stand"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/axolotl",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:axolotl"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/blaze",
           "conditions": [
             {
@@ -21,6 +76,19 @@
               "entity": "this",
               "predicate": {
                 "type": "minecraft:blaze"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/cat",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:cat"
               }
             }
           ]
@@ -47,6 +115,19 @@
               "entity": "this",
               "predicate": {
                 "type": "minecraft:chicken"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/cod",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:cod"
               }
             }
           ]
@@ -92,13 +173,13 @@
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/endermite",
+          "name": "minecraft:entities/enderman",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:endermite"
+                "type": "minecraft:enderman"
               }
             }
           ]
@@ -118,6 +199,32 @@
         },
 		{
           "type": "minecraft:loot_table",
+          "name": "minecraft:entities/frog",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:frog"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/goat",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:goat"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/husk",
           "conditions": [
             {
@@ -131,26 +238,26 @@
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/iron_golem",
+          "name": "minecraft:entities/illusioner",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:iron_golem"
+                "type": "minecraft:illusioner"
               }
             }
           ]
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/phantom",
+          "name": "minecraft:entities/ocelot",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:phantom"
+                "type": "minecraft:ocelot"
               }
             }
           ]
@@ -170,6 +277,32 @@
         },
 		{
           "type": "minecraft:loot_table",
+          "name": "minecraft:entities/piglin",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:piglin"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/piglin_brute",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:piglin_brute"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/pillager",
           "conditions": [
             {
@@ -183,13 +316,26 @@
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/ravager",
+          "name": "minecraft:entities/rabbit",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:ravager"
+                "type": "minecraft:rabbit"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/salmon",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:salmon"
               }
             }
           ]
@@ -222,6 +368,32 @@
         },
 		{
           "type": "minecraft:loot_table",
+          "name": "minecraft:entities/skeleton_horse",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:skeleton_horse"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/snow_golem",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:snow_golem"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/spider",
           "conditions": [
             {
@@ -248,13 +420,39 @@
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/villager",
+          "name": "minecraft:entities/tadpole",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:villager"
+                "type": "minecraft:tadpole"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/tropical_fish",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:tropical_fish"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/turtle",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:turtle"
               }
             }
           ]
@@ -274,6 +472,19 @@
         },
 		{
           "type": "minecraft:loot_table",
+          "name": "minecraft:entities/wither",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:wither"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/wither_skeleton",
           "conditions": [
             {
@@ -281,6 +492,19 @@
               "entity": "this",
               "predicate": {
                 "type": "minecraft:wither_skeleton"
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/zombie",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:zombie"
               }
             }
           ]
@@ -300,13 +524,13 @@
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/zombie",
+          "name": "minecraft:entities/zombified_piglin",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:zombie"
+                "type": "minecraft:zombified_piglin"
               }
             }
           ]

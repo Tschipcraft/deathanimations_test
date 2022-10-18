@@ -1,4 +1,5 @@
-## by Tschipcraft
+##by Tschipcraft
+# Updates the rotation scores of @s (= visual entity) to fit the ground
 
 execute as @s[tag=!arm,tag=!head] if score @s rotation matches -180..0 run scoreboard players set @s rotation -90
 execute as @s[tag=!arm,tag=!head] if score @s rotation matches 0..180 run scoreboard players set @s rotation 90
@@ -30,6 +31,6 @@ execute as @s[tag=item,tag=!bow] if score @s rotation matches -90..90 run scoreb
 execute as @s[tag=item,tag=!bow] if score @s rotation matches 90..180 run scoreboard players set @s rotation 180
 execute as @s[tag=item,tag=!bow] if score @s rotation matches -180..-90 run scoreboard players set @s rotation 180
 
-
-#execute as @s[tag=item] run scoreboard players set @s rotation 1
-#execute as @s[tag=bow] run scoreboard players set @s rotation 1
+# Calls the update function
+function deathanimations:general/rotation/update
+tag @s add OnGround

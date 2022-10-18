@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:marker",
+    "minecraft:area_effect_cloud",
+    "minecraft:armor_stand",
+    "minecraft:slime",
+    "minecraft:item",
+    "minecraft:experience_orb"
+  ]
+}

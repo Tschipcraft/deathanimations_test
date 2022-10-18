@@ -1,9 +1,13 @@
-## by Tschipcraft
+##by Tschipcraft
+# Freezes a visual entity
 
-execute if entity @s[tag=OnGround] run tag @s add low_p_mode
-execute if entity @s[tag=OnGround] run scoreboard players reset @s correction
-execute if entity @s[tag=OnGround] run scoreboard players reset @s age
-execute if entity @s[tag=OnGround] run tag @s remove visual
+# Set tags and scores
+tag @s add low_p_mode
+scoreboard players reset @s da_sid
+scoreboard players reset @s age
+tag @s remove visual
+tag @s remove da_low_p_activate
+data merge entity @s {Marker:1b}
 
 #say activate
 #scoreboard players set @s timeout_parts 0
