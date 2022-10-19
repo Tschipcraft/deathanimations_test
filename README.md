@@ -1,11 +1,18 @@
-# Death Animations v2.0 Test Branch
+<h1 align="center">
+  <img src="/pack.png" width="64" height="64"><br/>
+  Death Animations v2.0 Test Branch
+</h1>
+<p align="center">
+  <a href="https://github.com/Tschipcraft/deathanimations_test/stargazers"><img src="https://img.shields.io/github/stars/Tschipcraft/deathanimations_test?style=for-the-badge"></a>
+  <a href="https://github.com/Tschipcraft/deathanimations_test/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/deathanimations_test/total?logo=github&style=for-the-badge"></a>
+</p>
 
 ![icon](pack.png)
 > A data pack for 1.14x-1.19x
 
 > THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR!
 
-[Current state](https://tschipcraft.ddns.net/en//deathanimations-experimental.html)
+[Current state](https://tschipcraft.ddns.net/en/deathanimations-experimental.html)
 
 ## Features
 
