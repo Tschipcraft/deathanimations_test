@@ -7,7 +7,6 @@
   <a href="https://github.com/Tschipcraft/deathanimations_test/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/deathanimations_test/total?logo=github&style=for-the-badge"></a>
 </p>
 
-![icon](pack.png)
 > A data pack for 1.14x-1.19x
 
 > THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR!
@@ -29,7 +28,7 @@ Unique animations are available for Iron Golems, Phantoms, Endermites and Ravage
 Make sure to adjust the data pack for your needs by opening the settings (`/trigger settings`)
 
 
-## Installation (soon)
+## Installation (disabled until resource pack is uploaded)
 
 Download the latest release from [here](https://github.com/Tschipcraft/deathanimations_test/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
