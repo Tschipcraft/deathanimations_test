@@ -11,7 +11,7 @@
 
 > THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! MAKE SURE TO BACKUP YOUR WORLD BEFORE USING!
 
-## Features
+## Roadmap
 
 This is the first development version of Death Animations v2.0 for Minecraft 1.19
 
@@ -46,7 +46,7 @@ This is the first development version of Death Animations v2.0 for Minecraft 1.1
 The roadmap can also be viewed on my [website](https://tschipcraft.ddns.net/en/deathanimations-experimental.html)
 
 
-## Features description
+## Features
 
 Mobs have new, epic animations when they die.
 
@@ -64,3 +64,8 @@ Make sure to adjust the data pack for your needs by opening the settings (`/trig
 ## Installation
 
 Download the latest release from [here](https://github.com/Tschipcraft/deathanimations_test/releases/latest). Put the datapack .zip file into the `datapacks` folder of your Minecraft world and the assetpack .zip file into your resourcepacks folder. Make sure to activate the resourcepack before using
+
+
+## Issues
+
+This edition likely houses many bugs. If you encounter one, feel free to submit a issue.
