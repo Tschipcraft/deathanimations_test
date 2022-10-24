@@ -1,0 +1,14 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/chicken"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/chicken_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/chicken_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/chicken_left_leg"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/chicken_right_leg"}
+		
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 64],
+	"textures": {
+		"0": "entity/turtle/big_sea_turtle",
+		"particle": "item/turtle_shell"
+	},
+"elements": [
+{
+			"name": "leg1",
+			"from": [6.0,-0.5,3.0],
+			"to": [10.0,0.5,13.0],
+			"faces": {
+				"north": {"uv": [1.375, 8.25, 1.875, 8.5], "texture": "#0"},
+				"east": {"uv": [0.125, 8.25, 1.375, 8.5], "texture": "#0"},
+				"south": {"uv": [3.125, 8.25, 3.625, 8.5], "texture": "#0"},
+				"west": {"uv": [1.875, 8.25, 3.125, 8.5], "texture": "#0"},
+				"up": {"uv": [1.875, 8.25, 1.375, 5.75], "texture": "#0"},
+				"down": {"uv": [2.375, 5.75, 1.875, 8.25], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 1.0, 7.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 1.0, 7.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 2.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 2.0]
+		},
+		"ground": {
+			"translation": [0, 5.0, 0]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -8.5]
+		}
+	}}

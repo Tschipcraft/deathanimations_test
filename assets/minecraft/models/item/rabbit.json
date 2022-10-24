@@ -1,0 +1,16 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/rabbit"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/rabbit_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/rabbit_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/rabbit_left_arm"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/rabbit_right_arm"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/rabbit_left_foot"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/rabbit_right_foot"}
+		
+	]
+}

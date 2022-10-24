@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "entity/snow_golem",
+		"particle": "block/snow"
+	},
+"elements": [
+{
+			"name": "head",
+			"from": [4.5,-3.5,4.5],
+			"to": [11.5,3.5,11.5],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#0"},
+				"south": {"uv": [6, 2, 8, 4], "texture": "#0"},
+				"west": {"uv": [4, 2, 6, 4], "texture": "#0"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, -0.5, 4.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, -0.5, 4.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.5]
+		},
+		"ground": {
+			"translation": [0, 8.0, 0]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -11.5]
+		}
+	}}

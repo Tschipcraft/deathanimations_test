@@ -1,0 +1,12 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/null"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/tropical_fish_body"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/tropical_fish_tail"}
+		
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"0": "entity/blaze",
+		"particle": "item/blaze_powder"
+	},
+"elements": [
+{
+			"name": "rod_one",
+			"from": [14.0,18.0,0.0],
+			"to": [16.0,26.0,2.0],
+			"faces": {
+				"north": {"uv": [0.5, 9, 1, 13], "texture": "#0"},
+				"east": {"uv": [0, 9, 0.5, 13], "texture": "#0"},
+				"south": {"uv": [1.5, 9, 2, 13], "texture": "#0"},
+				"west": {"uv": [1, 9, 1.5, 13], "texture": "#0"},
+				"up": {"uv": [1, 9, 0.5, 8], "texture": "#0"},
+				"down": {"uv": [1.5, 8, 1, 9], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 0.0, 4.0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 0.0, 4.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"translation": [0, 8.5, 0]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -12.0]
+		}
+	}}

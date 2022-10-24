@@ -1,0 +1,56 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "entity/zombie/zombie",
+		"particle": "item/rotten_flesh"
+	},
+"elements": [
+{
+			"name": "right_arm",
+			"from": [6.0,-2.0,2.0],
+			"to": [10.0,2.0,14.0],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 22, 0]},
+			"faces": {
+				"north": {"uv": [13, 4, 12, 5], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [10, 5, 11, 8], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [12, 5, 11, 4], "texture": "#0"},
+				"west": {"uv": [12, 5, 13, 8], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [11, 5, 12, 8], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13, 5, 14, 8], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 2.0, 6.0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 2.0, 6.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 1.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 1.0]
+		},
+		"ground": {
+			"translation": [0, 6.5, 0]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -10.0]
+		}
+	}}

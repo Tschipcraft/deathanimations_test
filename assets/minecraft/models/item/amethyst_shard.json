@@ -1,0 +1,16 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/amethyst_shard"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/allay_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/allay_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/allay_right_arm"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/allay_left_arm"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/allay_left_wing"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/allay_right_wing"}
+		
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/scute"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/turtle_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/turtle_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/turtle_leg1"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/turtle_leg2"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/turtle_leg3"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/turtle_leg4"}
+		
+	]
+}

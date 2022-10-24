@@ -1,0 +1,53 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "entity/allay/allay",
+		"particle": "item/amethyst_shard"
+	},
+"elements": [
+{
+			"name": "left_arm",
+			"from": [7.5,-2.0,7.0],
+			"to": [8.5,2.0,9.0],
+			"faces": {
+				"north": {"uv": [12.5, 4, 13, 6], "texture": "#0"},
+				"east": {"uv": [11.5, 4, 12.5, 6], "texture": "#0"},
+				"south": {"uv": [14, 4, 14.5, 6], "texture": "#0"},
+				"west": {"uv": [13, 4, 14, 6], "texture": "#0"},
+				"up": {"uv": [13, 4, 12.5, 3], "texture": "#0"},
+				"down": {"uv": [13.5, 3, 13, 4], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.0, 8]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 8, -1.0]
+		}
+	}}

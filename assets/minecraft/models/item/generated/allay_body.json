@@ -1,0 +1,66 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "entity/allay/allay",
+		"particle": "item/amethyst_shard"
+	},
+"elements": [
+{
+			"name": "body",
+			"from": [6.5, -1.6, 7.0],
+			"to": [9.5, 2.4, 9.0],
+			"faces": {
+				"north": {"uv": [1, 6, 2.5, 8], "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 8], "texture": "#0"},
+				"south": {"uv": [3.5, 6, 5, 8], "texture": "#0"},
+				"west": {"uv": [2.5, 6, 3.5, 8], "texture": "#0"},
+				"up": {"uv": [2.5, 6, 1, 5], "texture": "#0"},
+				"down": {"uv": [4, 5, 2.5, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [6.7, -2.4000000000000004, 7.2],
+			"to": [9.3, 2.1999999999999997, 8.8],
+			"faces": {
+				"north": {"uv": [1, 9, 2.5, 11.5], "texture": "#0"},
+				"east": {"uv": [0, 9, 1, 11.5], "texture": "#0"},
+				"south": {"uv": [3.5, 9, 5, 11.5], "texture": "#0"},
+				"west": {"uv": [2.5, 9, 3.5, 11.5], "texture": "#0"},
+				"up": {"uv": [2.5, 9, 1, 8], "texture": "#0"},
+				"down": {"uv": [4, 8, 2.5, 9], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.0, 8]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 8, -1.0]
+		}
+	}}

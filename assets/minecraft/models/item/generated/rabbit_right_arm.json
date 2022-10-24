@@ -1,0 +1,53 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"0": "entity/rabbit/black",
+		"particle": "item/rabbit"
+	},
+"elements": [
+{
+			"name": "right_arm",
+			"from": [7.0,-3.5,7.0],
+			"to": [9.0,3.5,9.0],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 12], "texture": "#0"},
+				"east": {"uv": [0, 8.5, 0.5, 12], "texture": "#0"},
+				"south": {"uv": [1.5, 8.5, 2, 12], "texture": "#0"},
+				"west": {"uv": [1, 8.5, 1.5, 12], "texture": "#0"},
+				"up": {"uv": [1, 8.5, 0.5, 7.5], "texture": "#0"},
+				"down": {"uv": [1.5, 7.5, 1, 8.5], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.0, 8]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 8, -1.0]
+		}
+	}}

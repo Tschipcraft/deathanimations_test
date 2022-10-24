@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"0": "entity/skeleton/wither_skeleton",
+		"particle": "item/bone"
+	},
+"elements": [
+{
+			"name": "leftArm",
+			"from": [7.0,-6.0,7.0],
+			"to": [9.0,6.0,9.0],
+			"color": 2,
+			"faces": {
+				"north": {"uv": [10.5, 9, 11, 15], "texture": "#0"},
+				"east": {"uv": [10, 9, 10.5, 15], "texture": "#0"},
+				"south": {"uv": [11.5, 9, 12, 15], "texture": "#0"},
+				"west": {"uv": [11, 9, 11.5, 15], "texture": "#0"},
+				"up": {"uv": [11, 9, 10.5, 8], "texture": "#0"},
+				"down": {"uv": [11.5, 8, 11, 9], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.0, 8]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 8, -1.0]
+		}
+	}}

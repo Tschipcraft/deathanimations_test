@@ -1,0 +1,53 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "entity/goat/goat",
+		"particle": "item/mutton"
+	},
+"elements": [
+{
+			"name": "left_horn",
+			"from": [7.0,-3.5,7.0],
+			"to": [9.0,3.5,9.0],
+			"faces": {
+				"north": {"uv": [3.5, 14.25, 4, 16], "texture": "#0"},
+				"east": {"uv": [3, 14.25, 3.5, 16], "texture": "#0"},
+				"south": {"uv": [4.5, 14.25, 5, 16], "texture": "#0"},
+				"west": {"uv": [4, 14.25, 4.5, 16], "texture": "#0"},
+				"up": {"uv": [4, 14.25, 3.5, 13.75], "texture": "#0"},
+				"down": {"uv": [4.5, 13.75, 4, 14.25], "texture": "#0"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, -1.0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 3.0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.0, 8]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 8, -1.0]
+		}
+	}}

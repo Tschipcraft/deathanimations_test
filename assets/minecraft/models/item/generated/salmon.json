@@ -1,0 +1,136 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "entity/fish/salmon",
+		"particle": "item/salmon"
+	},
+"elements": [
+		{
+			"name": "head",
+			"from": [7.0,1.0,1.0],
+			"to": [9.0,5.0,4.0],
+			"faces": {
+				"north": {"uv": [12.5, 1.5, 13.5, 3.5], "texture": "#0"},
+				"east": {"uv": [11, 1.5, 12.5, 3.5], "texture": "#0"},
+				"south": {"uv": [15, 1.5, 16, 3.5], "texture": "#0"},
+				"west": {"uv": [13.5, 1.5, 15, 3.5], "texture": "#0"},
+				"up": {"uv": [13.5, 1.5, 12.5, 0], "texture": "#0"},
+				"down": {"uv": [14.5, 0, 13.5, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_front",
+			"from": [6.5,0.5,4.0],
+			"to": [9.5,5.5,12.0],
+			"faces": {
+				"north": {"uv": [4, 4, 5.5, 6.5], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 6.5], "texture": "#0"},
+				"south": {"uv": [9.5, 4, 11, 6.5], "texture": "#0"},
+				"west": {"uv": [5.5, 4, 9.5, 6.5], "texture": "#0"},
+				"up": {"uv": [5.5, 4, 4, 0], "texture": "#0"},
+				"down": {"uv": [7, 0, 5.5, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_front",
+			"from": [9.5,1.5,4.5],
+			"to": [11.5,1.5,6.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [1.5, 1.5, -3]},
+			"faces": {
+				"north": {"uv": [2, 0, 1, 0], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [1, 0, 0, 0], "texture": "#0"},
+				"west": {"uv": [1, 0, 1, 1], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [1, 0, 0, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_front",
+			"from": [4.5,1.5,4.5],
+			"to": [6.5,1.5,6.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [-1.5, 1.5, -3]},
+			"faces": {
+				"north": {"uv": [4, 0, 3, 0], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [2, 0, 2, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [3, 0, 2, 0], "texture": "#0"},
+				"west": {"uv": [3, 0, 3, 1], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [2, 0, 3, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [3, 0, 2, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_front",
+			"from": [8.0,5.5,10.0],
+			"to": [8.0,7.5,12.0],
+			"faces": {
+				"north": {"uv": [3, 2, 3, 3], "texture": "#0"},
+				"east": {"uv": [4, 2, 3, 3], "texture": "#0"},
+				"south": {"uv": [4, 2, 4, 3], "texture": "#0"},
+				"west": {"uv": [3, 2, 4, 3], "texture": "#0"},
+				"up": {"uv": [3, 2, 3, 1], "texture": "#0"},
+				"down": {"uv": [3, 1, 3, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_back",
+			"from": [6.5,0.5,12.0],
+			"to": [9.5,5.5,20.0],
+			"faces": {
+				"north": {"uv": [4, 10.5, 5.5, 13], "texture": "#0"},
+				"east": {"uv": [0, 10.5, 4, 13], "texture": "#0"},
+				"south": {"uv": [9.5, 10.5, 11, 13], "texture": "#0"},
+				"west": {"uv": [5.5, 10.5, 9.5, 13], "texture": "#0"},
+				"up": {"uv": [5.5, 10.5, 4, 6.5], "texture": "#0"},
+				"down": {"uv": [7, 6.5, 5.5, 10.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_back",
+			"from": [8.0,5.5,11.0],
+			"to": [8.0,7.5,15.0],
+			"faces": {
+				"north": {"uv": [2, 3, 2, 4], "texture": "#0"},
+				"east": {"uv": [4, 3, 2, 4], "texture": "#0"},
+				"south": {"uv": [4, 3, 4, 4], "texture": "#0"},
+				"west": {"uv": [2, 3, 4, 4], "texture": "#0"},
+				"up": {"uv": [2, 3, 2, 1], "texture": "#0"},
+				"down": {"uv": [2, 1, 2, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body_back",
+			"from": [8.0,0.5,20.0],
+			"to": [8.0,5.5,26.0],
+			"faces": {
+				"north": {"uv": [13, 8, 13, 10.5], "texture": "#0"},
+				"east": {"uv": [16, 8, 13, 10.5], "texture": "#0"},
+				"south": {"uv": [16, 8, 16, 10.5], "texture": "#0"},
+				"west": {"uv": [13, 8, 16, 10.5], "texture": "#0"},
+				"up": {"uv": [13, 8, 13, 5], "texture": "#0"},
+				"down": {"uv": [13, 5, 13, 8], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "head",
+			"origin": [0, 6, -4],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "body_front",
+			"origin": [0, 6, -4],
+			"color": 0,
+			"children": [1, 2, 3, 4]
+		},
+		{
+			"name": "body_back",
+			"origin": [0, 6, 4],
+			"color": 0,
+			"children": [5, 6, 7]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/salmon"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/salmon_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/salmon_body_front"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/salmon_body_back"}
+		
+	]
+}

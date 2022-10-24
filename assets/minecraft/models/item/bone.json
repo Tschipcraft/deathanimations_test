@@ -1,0 +1,41 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/bone"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/skeleton_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/skeleton_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/skeleton_rightarm"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/skeleton_leftarm"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/skeleton_rightleg"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/skeleton_leftleg"},
+        {"predicate": {"custom_model_data":7}, "model": "item/generated/skeleton_horse_head"},
+        {"predicate": {"custom_model_data":8}, "model": "item/generated/skeleton_horse_body"},
+        {"predicate": {"custom_model_data":9}, "model": "item/generated/skeleton_horse_front_left_leg"},
+        {"predicate": {"custom_model_data":10}, "model": "item/generated/skeleton_horse_front_right_leg"},
+        {"predicate": {"custom_model_data":11}, "model": "item/generated/skeleton_horse_back_left_leg"},
+        {"predicate": {"custom_model_data":12}, "model": "item/generated/skeleton_horse_back_right_leg"},
+        {"predicate": {"custom_model_data":13}, "model": "item/generated/skeleton_horse_saddle"},
+        {"predicate": {"custom_model_data":14}, "model": "item/generated/stray_head"},
+        {"predicate": {"custom_model_data":15}, "model": "item/generated/stray_body"},
+        {"predicate": {"custom_model_data":16}, "model": "item/generated/stray_left_arm"},
+        {"predicate": {"custom_model_data":17}, "model": "item/generated/stray_right_arm"},
+        {"predicate": {"custom_model_data":18}, "model": "item/generated/stray_left_leg"},
+        {"predicate": {"custom_model_data":19}, "model": "item/generated/stray_right_leg"},
+        {"predicate": {"custom_model_data":20}, "model": "item/generated/wither_upperbodypart1"},
+        {"predicate": {"custom_model_data":21}, "model": "item/generated/wither_upperbodypart2"},
+        {"predicate": {"custom_model_data":22}, "model": "item/generated/wither_upperbodypart3"},
+        {"predicate": {"custom_model_data":23}, "model": "item/generated/wither_head1"},
+        {"predicate": {"custom_model_data":24}, "model": "item/generated/wither_head2"},
+        {"predicate": {"custom_model_data":25}, "model": "item/generated/wither_head3"},
+        {"predicate": {"custom_model_data":26}, "model": "item/generated/wither_skeleton_head"},
+        {"predicate": {"custom_model_data":27}, "model": "item/generated/wither_skeleton_body"},
+        {"predicate": {"custom_model_data":28}, "model": "item/generated/wither_skeleton_rightarm"},
+        {"predicate": {"custom_model_data":29}, "model": "item/generated/wither_skeleton_leftarm"},
+        {"predicate": {"custom_model_data":30}, "model": "item/generated/wither_skeleton_rightleg"},
+        {"predicate": {"custom_model_data":31}, "model": "item/generated/wither_skeleton_leftleg"}
+		
+	]
+}

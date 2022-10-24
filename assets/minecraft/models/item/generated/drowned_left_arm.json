@@ -1,0 +1,71 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "entity/zombie/drowned",
+		"1": "entity/zombie/drowned_outer_layer",
+		"particle": "item/rotten_flesh"
+	},
+	"elements": [
+{
+			"name": "left_arm",
+			"from": [6.0, -2.0, 2.0],
+			"to": [10.0, 2.0, 14.0],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.0, 0.0, 12.0]},
+			"faces": {
+				"north": {"uv": [11, 12, 10, 13], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [8, 13, 9, 16], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [10, 13, 9, 12], "texture": "#0"},
+				"west": {"uv": [10, 13, 11, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [9, 13, 10, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [11, 13, 12, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "left_arm",
+			"from": [5.75, -2.25, 1.75],
+			"to": [10.25, 2.25, 14.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.0, 0.0, 12.0]},
+			"faces": {
+				"north": {"uv": [11, 12, 10, 13], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [8, 13, 9, 16], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [10, 13, 9, 12], "texture": "#1"},
+				"west": {"uv": [10, 13, 11, 16], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [9, 13, 10, 16], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [11, 13, 12, 16], "texture": "#1"}
+}
+}
+],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 2.25, 5.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [85, 0, 0],
+			"translation": [0, 2.25, 5.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 15, 0],
+			"translation": [-0.75, 10.5, 0.75]
+		},
+		"ground": {
+			"translation": [0, 6.75, 0]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 6.5, 0]
+		},
+		"head": {
+			"translation": [0, 6.62, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -10.25]
+		}
+	}}

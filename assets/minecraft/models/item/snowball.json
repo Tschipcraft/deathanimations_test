@@ -1,0 +1,15 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/snowball"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/snow_golem_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/snow_golem_left_hand"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/snow_golem_right_hand"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/snow_golem_body"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/snow_golem_bottom"}
+		
+	]
+}

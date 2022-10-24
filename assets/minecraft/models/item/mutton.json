@@ -1,0 +1,24 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/mutton"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/goat_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/goat_left_horn"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/goat_right_horn"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/goat_body"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/goat_leg1"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/goat_leg2"},
+        {"predicate": {"custom_model_data":7}, "model": "item/generated/goat_leg3"},
+        {"predicate": {"custom_model_data":8}, "model": "item/generated/goat_leg4"},
+        {"predicate": {"custom_model_data":9}, "model": "item/generated/sheep_body"},
+        {"predicate": {"custom_model_data":10}, "model": "item/generated/sheep_head"},
+        {"predicate": {"custom_model_data":11}, "model": "item/generated/sheep_leg1"},
+        {"predicate": {"custom_model_data":12}, "model": "item/generated/sheep_leg2"},
+        {"predicate": {"custom_model_data":13}, "model": "item/generated/sheep_leg3"},
+        {"predicate": {"custom_model_data":14}, "model": "item/generated/sheep_leg4"}
+		
+	]
+}

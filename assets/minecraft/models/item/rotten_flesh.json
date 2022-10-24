@@ -1,0 +1,34 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/rotten_flesh"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/drowned_head"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/drowned_body"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/drowned_left_arm"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/drowned_right_arm"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/drowned_left_leg"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/drowned_right_leg"},
+        {"predicate": {"custom_model_data":7}, "model": "item/generated/husk_head"},
+        {"predicate": {"custom_model_data":8}, "model": "item/generated/husk_body"},
+        {"predicate": {"custom_model_data":9}, "model": "item/generated/husk_left_arm"},
+        {"predicate": {"custom_model_data":10}, "model": "item/generated/husk_right_arm"},
+        {"predicate": {"custom_model_data":11}, "model": "item/generated/husk_left_leg"},
+        {"predicate": {"custom_model_data":12}, "model": "item/generated/husk_right_leg"},
+        {"predicate": {"custom_model_data":13}, "model": "item/generated/zombie_head"},
+        {"predicate": {"custom_model_data":14}, "model": "item/generated/zombie_body"},
+        {"predicate": {"custom_model_data":15}, "model": "item/generated/zombie_left_arm"},
+        {"predicate": {"custom_model_data":16}, "model": "item/generated/zombie_right_arm"},
+        {"predicate": {"custom_model_data":17}, "model": "item/generated/zombie_left_leg"},
+        {"predicate": {"custom_model_data":18}, "model": "item/generated/zombie_right_leg"},
+        {"predicate": {"custom_model_data":19}, "model": "item/generated/zombie_villager_head"},
+        {"predicate": {"custom_model_data":20}, "model": "item/generated/zombie_villager_body"},
+        {"predicate": {"custom_model_data":21}, "model": "item/generated/zombie_villager_left_arm"},
+        {"predicate": {"custom_model_data":22}, "model": "item/generated/zombie_villager_right_arm"},
+        {"predicate": {"custom_model_data":23}, "model": "item/generated/zombie_villager_left_leg"},
+        {"predicate": {"custom_model_data":24}, "model": "item/generated/zombie_villager_right_leg"}
+		
+	]
+}

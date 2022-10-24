@@ -1,0 +1,34 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/porkchop"
+	},
+	
+	"overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/generated/pig_body"},
+        {"predicate": {"custom_model_data":2}, "model": "item/generated/pig_head"},
+        {"predicate": {"custom_model_data":3}, "model": "item/generated/pig_leg1"},
+        {"predicate": {"custom_model_data":4}, "model": "item/generated/pig_leg2"},
+        {"predicate": {"custom_model_data":5}, "model": "item/generated/pig_leg3"},
+        {"predicate": {"custom_model_data":6}, "model": "item/generated/pig_leg4"},
+        {"predicate": {"custom_model_data":7}, "model": "item/generated/piglin_head"},
+        {"predicate": {"custom_model_data":8}, "model": "item/generated/piglin_body"},
+        {"predicate": {"custom_model_data":9}, "model": "item/generated/piglin_left_arm"},
+        {"predicate": {"custom_model_data":10}, "model": "item/generated/piglin_right_arm"},
+        {"predicate": {"custom_model_data":11}, "model": "item/generated/piglin_left_leg"},
+        {"predicate": {"custom_model_data":12}, "model": "item/generated/piglin_right_leg"},
+        {"predicate": {"custom_model_data":13}, "model": "item/generated/piglin_brute_head"},
+        {"predicate": {"custom_model_data":14}, "model": "item/generated/piglin_brute_body"},
+        {"predicate": {"custom_model_data":15}, "model": "item/generated/piglin_brute_left_arm"},
+        {"predicate": {"custom_model_data":16}, "model": "item/generated/piglin_brute_right_arm"},
+        {"predicate": {"custom_model_data":17}, "model": "item/generated/piglin_brute_left_leg"},
+        {"predicate": {"custom_model_data":18}, "model": "item/generated/piglin_brute_right_leg"},
+        {"predicate": {"custom_model_data":19}, "model": "item/generated/zombified_piglin_head"},
+        {"predicate": {"custom_model_data":20}, "model": "item/generated/zombified_piglin_body"},
+        {"predicate": {"custom_model_data":21}, "model": "item/generated/zombified_piglin_left_arm"},
+        {"predicate": {"custom_model_data":22}, "model": "item/generated/zombified_piglin_right_arm"},
+        {"predicate": {"custom_model_data":23}, "model": "item/generated/zombified_piglin_left_leg"},
+        {"predicate": {"custom_model_data":24}, "model": "item/generated/zombified_piglin_right_leg"}
+		
+	]
+}
