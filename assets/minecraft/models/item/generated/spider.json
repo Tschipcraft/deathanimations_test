@@ -53,8 +53,8 @@
 		},
 		{
 			"name": "leg0",
-			"from": [-11.0,8.0,9.0],
-			"to": [5.0,10.0,11.0],
+			"from": [-11.0,8.0,11.0],
+			"to": [5.0,10.0,13.0],
 			"shade": false,
 			"color": 1,
 			"faces": {
@@ -68,8 +68,8 @@
 		},
 		{
 			"name": "leg1",
-			"from": [11.0,8.0,9.0],
-			"to": [27.0,10.0,11.0],
+			"from": [11.0,8.0,11.0],
+			"to": [27.0,10.0,13.0],
 			"shade": false,
 			"color": 0,
 			"faces": {
@@ -113,8 +113,8 @@
 		},
 		{
 			"name": "leg4",
-			"from": [-11.0,8.0,7.0],
-			"to": [5.0,10.0,9.0],
+			"from": [-11.0,8.0,5.0],
+			"to": [5.0,10.0,7.0],
 			"shade": false,
 			"color": 1,
 			"faces": {
@@ -128,8 +128,8 @@
 		},
 		{
 			"name": "leg5",
-			"from": [11.0,8.0,7.0],
-			"to": [27.0,10.0,9.0],
+			"from": [11.0,8.0,5.0],
+			"to": [27.0,10.0,7.0],
 			"shade": false,
 			"color": 7,
 			"faces": {
@@ -143,8 +143,8 @@
 		},
 		{
 			"name": "leg6",
-			"from": [-11.0,8.0,6.0],
-			"to": [5.0,10.0,8.0],
+			"from": [-11.0,8.0,2.0],
+			"to": [5.0,10.0,4.0],
 			"shade": false,
 			"color": 1,
 			"faces": {
@@ -158,8 +158,8 @@
 		},
 		{
 			"name": "leg7",
-			"from": [11.0,8.0,6.0],
-			"to": [27.0,10.0,8.0],
+			"from": [11.0,8.0,2.0],
+			"to": [27.0,10.0,4.0],
 			"shade": false,
 			"color": 1,
 			"faces": {
@@ -176,66 +176,99 @@
 		{
 			"name": "head",
 			"origin": [0, 9, -3],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [0]
 		},
 		{
 			"name": "body0",
 			"origin": [0, 9, 0],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [1]
 		},
 		{
 			"name": "body1",
 			"origin": [0, 9, 9],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [2]
 		},
 		{
 			"name": "leg0",
 			"origin": [-4, 9, 2],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [3]
 		},
 		{
 			"name": "leg1",
 			"origin": [4, 9, 2],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [4]
 		},
 		{
 			"name": "leg2",
 			"origin": [-4, 9, 1],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [5]
 		},
 		{
 			"name": "leg3",
 			"origin": [4, 9, 1],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [6]
 		},
 		{
 			"name": "leg4",
 			"origin": [-4, 9, 0],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [7]
 		},
 		{
 			"name": "leg5",
 			"origin": [4, 9, 0],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [8]
 		},
 		{
 			"name": "leg6",
 			"origin": [-4, 9, -1],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [9]
 		},
 		{
 			"name": "leg7",
 			"origin": [4, 9, -1],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"shade": false,
 			"children": [10]
 		}

@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "item/enderpearl"
+		"layer0": "item/ender_pearl"
 	},
 	
 	"overrides": [

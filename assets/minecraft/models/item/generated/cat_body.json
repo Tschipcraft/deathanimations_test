@@ -8,8 +8,8 @@
 "elements": [
 {
 			"name": "body",
-			"from": [6.0, -1.75, -1.6660350000000008],
-			"to": [10.0, 4.25, 14.333965],
+			"from": [6.5, -1.3125, 0.7504749999999998],
+			"to": [9.5, 3.1875, 12.750475],
 			"faces": {
 				"north": {"uv": [7.5, 3, 6.5, 0], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [5, 3, 6.5, 11], "rotation": 90, "texture": "#0"},
@@ -21,9 +21,9 @@
 		},
 		{
 			"name": "body",
-			"from": [7.5, -4.25, 14.333965],
-			"to": [8.5, 3.75, 15.333965],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.0, 3.25, 14.333965]},
+			"from": [7.625, -3.1875, 12.750475],
+			"to": [8.375, 2.8125, 13.500475],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.0, 2.4375, 12.750475]},
 			"faces": {
 				"north": {"uv": [0.25, 8, 0.5, 12], "texture": "#0"},
 				"east": {"uv": [0, 8, 0.25, 12], "texture": "#0"},
@@ -35,9 +35,9 @@
 		},
 		{
 			"name": "body",
-			"from": [7.5, -3.98775, 9.666034999999999],
-			"to": [8.5, -2.98775, 17.666035],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8.0, 3.25, 14.333965]},
+			"from": [7.625, -2.9908099999999997, 9.249525],
+			"to": [8.375, -2.24081, 15.249525],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.0, 2.4375, 12.750475]},
 			"faces": {
 				"north": {"uv": [1.75, 7.5, 1.5, 8], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [1, 8, 1.25, 12], "rotation": 270, "texture": "#0"},
@@ -51,22 +51,22 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [85, 0, 0],
-			"translation": [0, 5.664999999999999, 3.75]
+			"translation": [0, 3.25, 4.8100000000000005]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [85, 0, 0],
-			"translation": [0, 5.664999999999999, 3.75]
+			"translation": [0, 3.25, 4.8100000000000005]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 15, 0],
-			"translation": [-0.75, 10.5, -2.664999999999999]
+			"translation": [-0.75, 10.5, -0.25]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 15, 0],
-			"translation": [-0.75, 10.5, -2.664999999999999]
+			"translation": [-0.75, 10.5, -0.25]
 		},
 		"ground": {
-			"translation": [0, 8.75, 0]
+			"translation": [0, 7.6899999999999995, 0]
 		},
 		"gui": {
 			"rotation": [30, -135, 0],
@@ -78,6 +78,6 @@
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],
-			"translation": [0, 0, -12.25]
+			"translation": [0, 0, -11.19]
 		}
 	}}

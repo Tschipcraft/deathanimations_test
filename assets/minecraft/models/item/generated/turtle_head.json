@@ -3,7 +3,7 @@
 	"texture_size": [128, 64],
 	"textures": {
 		"0": "entity/turtle/big_sea_turtle",
-		"particle": "item/turtle_shell"
+		"particle": "item/scute"
 	},
 "elements": [
 {

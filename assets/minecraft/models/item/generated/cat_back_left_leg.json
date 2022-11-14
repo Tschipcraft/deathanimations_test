@@ -8,8 +8,8 @@
 "elements": [
 {
 			"name": "back_left_leg",
-			"from": [7.0,-3.0,7.0],
-			"to": [9.0,3.0,9.0],
+			"from": [7.25,-2.25,7.25],
+			"to": [8.75,2.25,8.75],
 			"faces": {
 				"north": {"uv": [2.5, 7.5, 3, 10.5], "texture": "#0"},
 				"east": {"uv": [2, 7.5, 2.5, 10.5], "texture": "#0"},
@@ -22,22 +22,22 @@
 ],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 6.5, -1.0]
+			"translation": [0, 6.5, -0.75]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 6.5, -1.0]
+			"translation": [0, 6.5, -0.75]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 15, 0],
-			"translation": [-0.75, 10.5, 3.0]
+			"translation": [-0.75, 10.5, 2.75]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 15, 0],
-			"translation": [-0.75, 10.5, 3.0]
+			"translation": [-0.75, 10.5, 2.75]
 		},
 		"ground": {
 			"rotation": [90, 0, 0],
-			"translation": [0, 0.0, 8]
+			"translation": [0, -0.25, 8]
 		},
 		"gui": {
 			"rotation": [30, -135, 0],
@@ -48,6 +48,6 @@
 			"scale": [1.62, 1.62, 1.62]
 		},
 		"fixed": {
-			"translation": [0, 8, -1.0]
+			"translation": [0, 8, -0.75]
 		}
 	}}
