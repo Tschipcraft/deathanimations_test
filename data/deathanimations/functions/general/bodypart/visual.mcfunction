@@ -25,7 +25,7 @@ execute as @s[tag=OnGround] unless entity @s[scores={age=145..150}] if data stor
 execute as @s[tag=!OnGround] run function deathanimations:general/bodypart/in_air
 
 # Adjust Position
-execute positioned ~ ~-1.4 ~ run function deathanimations:visual_correction/encode
+execute positioned ~ ~-1.425 ~ run function deathanimations:visual_correction/encode
 
 # Particles
 execute as @s[scores={age=0..140}] at @s run function deathanimations:general/particle

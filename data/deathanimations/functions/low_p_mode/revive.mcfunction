@@ -36,7 +36,7 @@ execute at @s if block ~ ~1.0 ~ #deathanimations:nonsolid run tag @s remove OnGr
 #execute as @s[tag=fish] run summon minecraft:armor_stand ~ ~1.4 ~ {Small:1b,Tags:[bodypart,fish,zombiebody,OnGround],Silent:1,Invisible:1,DisabledSlots:4144959}
 
 
-execute as @s at @s positioned ~ ~0.4 ~ run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:1b,CustomName:'{"text":"Unknown"}',Small:1b,Tags:[bodypart,init,OnGround_s,low_p_revive],Silent:1,Invisible:1,DisabledSlots:4144959}
+execute as @s at @s positioned ~ ~0.425 ~ run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,CustomName:'{"text":"Unknown"}',Small:1b,Tags:[bodypart,init,OnGround_s,low_p_revive],Silent:1,Invisible:1,DisabledSlots:4144959}
 
 
 # Set scores
