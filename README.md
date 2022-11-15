@@ -3,19 +3,19 @@
   Death Animations v2.0 Test Branch
 </h1>
 <p align="center">
-  <a href="https://github.com/Tschipcraft/deathanimations_test/stargazers"><img src="https://img.shields.io/github/stars/Tschipcraft/deathanimations_test?style=for-the-badge"></a>
-  <a href="https://github.com/Tschipcraft/deathanimations_test/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/deathanimations_test/total?logo=github&style=for-the-badge"></a>
+  <a href="https://github.com/Tschipcraft/deathanimations_test/stargazers"><img src="https://img.shields.io/github/stars/Tschipcraft/deathanimations_test?style=for-the-badge&colorB=d100ff"></a>
+  <a href="https://github.com/Tschipcraft/deathanimations_test/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/deathanimations_test/total?logo=github&style=for-the-badge&colorB=d100ff"></a>
 </p>
 
-> A data pack for 1.19x
+> A data pack for Minecraft 1.19x
 
-> THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! MAKE SURE TO BACKUP YOUR WORLD BEFORE USING!
+### ⚠ THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! DO NOT USE WITHOUT BACKUP!
 
 ## Roadmap
 
-This is the first development version of Death Animations v2.0 for Minecraft 1.19
+This is the second development version of Death Animations v2.0 for Minecraft 1.19
 
-**Implemented is:**
+✔️ **Implemented:**
 - Rewrite of body part system
 -> Unique id assigning now counts upwards
 -> Id finding now uses predicates instead of functions making it faster
@@ -25,11 +25,11 @@ This is the first development version of Death Animations v2.0 for Minecraft 1.1
 - Evaluate tracked projectiles where they hit the entity, making more powerful Head-, Arm-, Leg- and Torsoshots possible (knockback)
 - New animations for frogs, tadpoles and snow golems
 - Updated tag lists for 1.19
+- Offset adjustments
 
-**Planned (not yet implemented):**
+📜 **Planned (not yet implemented):**
 - Core adjustments
 - Randomized body part rotations
-- Offset adjustments
 - Making body parts spin on the z axis, making them have 3dof
 - Ragdolls
 - Custom body part hit sound
@@ -42,21 +42,22 @@ This is the first development version of Death Animations v2.0 for Minecraft 1.1
 - Special animations for Blaze + Enderman
 - Bug fixing
 - Performance
+- New icon
 
 The roadmap can also be viewed on my [website](https://tschipcraft.ddns.net/en/deathanimations-experimental.html)
 
 
 ## Features
 
-Mobs have new, epic animations when they die.
+Mobs have new, _epic_ animations when they die.
 
 **Works with:**
-Zombies, Husks, Skeletons, Strays, Creepers, Drowned, Phantoms, Villagers, Pillagers, Evokers, Vindicators, Pigs, Cows, Chickens, Sheep, Frogs, Tadpoles, Goats, (Iron golems), (Ravagers), (Endermites).
+Zombies, Husks, Skeletons, Strays, Creepers, Drowned, Spiders, Cave Spiders, Phantoms, Enderman, (Villagers), Pillagers, Evokers, Vindicators, Illusioners, Piglins, Piglin Brutes, Zombified Piglins, Pigs, Cows, Chicken, Sheep, Frogs, Tadpoles, Fish, Snow Golem, (Iron Golem), (Ravagers), (Endermites).
 
 Most body parts can be picked up with a right-click.
 You can also use them in workbenches or even eat them.
 
-(Unique animations are available for Iron Golems, Phantoms, Endermites and Ravagers.)
+(Unique animations will be available for Iron Golems, Phantoms, Blazes, Enderman, Endermites and Ravagers.)
 
 Make sure to adjust the data pack for your needs by opening the settings (`/trigger settings`)
 
