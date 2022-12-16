@@ -28,6 +28,7 @@ This is the second development version of Death Animations v2.0 for Minecraft 1.
 - [x] Offset adjustments
 
 📜 **Planned (not yet implemented):**
+- [ ] Fix incompatibility with Minecraft 1.19.3 due to resource pack loading changes
 - [ ] Core adjustments
 - [ ] Randomized body part rotations
 - [ ] Making body parts spin on the z axis, making them have 3dof
