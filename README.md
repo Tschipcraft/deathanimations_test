@@ -26,9 +26,12 @@ This is the second development version of Death Animations v2.0 for Minecraft 1.
 - [x] New animations for frogs, tadpoles and snow golems
 - [x] Updated tag lists for 1.19
 - [x] Offset adjustments
+- [x] Fixed bugs:
+  - [x] https://github.com/Tschipcraft/deathanimations_test/issues/1 Fixed incompatibility with Minecraft 1.19.3 due to resource pack loading changes
+  - [x] Fixed incorrect loot table
+  - [x] Fixed vanilla heads not being decoded and encoded correctly
 
 📜 **Planned (not yet implemented):**
-- [ ] https://github.com/Tschipcraft/deathanimations_test/issues/1 Fix incompatibility with Minecraft 1.19.3 due to resource pack loading changes
 - [ ] Core adjustments
 - [ ] Randomized body part rotations
 - [ ] Making body parts spin on the z axis, making them have 3dof
@@ -38,7 +41,7 @@ This is the second development version of Death Animations v2.0 for Minecraft 1.
   - [ ] Option for using player heads only?
   - [ ] Goat Horn
   - [ ] Material mixing for head items (no use)/skeleton body (bonemeal)
-- [ ] Special nbt heritage for mob variants/saddles
+- [ ] Special NBT heritage for mob variants/saddles
 - [ ] Axis lock system for special body part forms
 - [ ] Special animations for Blaze + Enderman
 - [ ] Bug fixing

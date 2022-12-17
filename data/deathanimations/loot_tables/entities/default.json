@@ -14,22 +14,6 @@
       "entries": [
 		{
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/phantom",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "minecraft:phantom"
-              }
-            }
-          ]
-        },
-    {
-      "rolls": 1,
-      "entries": [
-		{
-          "type": "minecraft:loot_table",
           "name": "minecraft:entities/allay",
           "conditions": [
             {
