@@ -30,6 +30,8 @@ This is the second development version of Death Animations v2.0 for Minecraft 1.
   - [x] https://github.com/Tschipcraft/deathanimations_test/issues/1 Fixed incompatibility with Minecraft 1.19.3 due to resource pack loading changes
   - [x] Fixed incorrect loot table
   - [x] Fixed vanilla heads not being decoded and encoded correctly
+  - [x] Fixed incorrect angled body parts in low_p_mode
+  - [x] Fixed choppy rotation reset
 
 📜 **Planned (not yet implemented):**
 - [ ] Core adjustments
@@ -41,7 +43,7 @@ This is the second development version of Death Animations v2.0 for Minecraft 1.
   - [ ] Option for using player heads only?
   - [ ] Goat Horn
   - [ ] Material mixing for head items (no use)/skeleton body (bonemeal)
-- [ ] Special NBT heritage for mob variants/saddles
+- [ ] Special NBT heritage for mob variants/saddles + motion
 - [ ] Axis lock system for special body part forms
 - [ ] Special animations for Blaze + Enderman
 - [ ] Bug fixing

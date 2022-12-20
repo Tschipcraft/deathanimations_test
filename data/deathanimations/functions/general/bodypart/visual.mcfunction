@@ -25,7 +25,8 @@ execute as @s[tag=OnGround] unless entity @s[scores={age=145..150}] if data stor
 execute as @s[tag=!OnGround] run function deathanimations:general/bodypart/in_air
 
 # Adjust Position
-execute positioned ~ ~-1.425 ~ run function deathanimations:visual_correction/encode
+execute as @s[tag=OnGround] positioned ~ ~-1.425 ~ run function deathanimations:visual_correction/encode
+execute as @s[tag=!OnGround] positioned ~ ~-1.425 ~ run tp @s ~ ~ ~
 
 # Particles
 execute as @s[scores={age=0..140}] at @s run function deathanimations:general/particle
@@ -34,5 +35,5 @@ execute as @s[scores={age=0..140}] at @s run function deathanimations:general/pa
 scoreboard players add @s age 1
 
 # Low P mode
-execute as @s[tag=da_low_p_activate] run kill @e[type=#deathanimations:marker_entities,tag=this]
-execute as @s[tag=da_low_p_activate] run function deathanimations:low_p_mode/activate
+execute as @s[tag=da_low_p_activate,tag=OnGround] run kill @e[type=#deathanimations:marker_entities,tag=this]
+execute as @s[tag=da_low_p_activate,tag=OnGround] run function deathanimations:low_p_mode/activate
