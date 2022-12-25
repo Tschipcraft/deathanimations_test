@@ -12,7 +12,7 @@ execute as @a[scores={menu=61..}] run scoreboard players set @s da_welcome 1
 scoreboard players reset @a[scores={menu=122..}] menu
 scoreboard players add @a[scores={menu=1..}] menu 1
 
-execute as @a[scores={troubleshoot=1}] run function deathanimations:compatibility/y_lag
+execute as @a[scores={troubleshoot=1}] run function deathanimations:compatibility/troubleshoot
 scoreboard players reset @a[scores={troubleshoot=1..}] troubleshoot
 
 ## settings

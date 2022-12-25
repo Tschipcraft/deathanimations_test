@@ -1,6 +1,11 @@
 ##by NOPEname modified by Tschipcraft
 
+# Get current motion
+execute as @s store result score @s xm run data get entity @s Motion[0] 100
+execute as @s store result score @s ym run data get entity @s Motion[1] 100
+execute as @s store result score @s zm run data get entity @s Motion[2] 100
 
+# Calculate new motion
 execute as @s store result score @s x run data get entity @s Pos[0] 100
 execute as @s store result score @s y run data get entity @s Pos[1] 100
 execute as @s store result score @s z run data get entity @s Pos[2] 100
@@ -16,7 +21,7 @@ scoreboard players operation @s dy -= @s y
 #scoreboard players operation @s dy += @s staticy
 scoreboard players operation @s dz -= @s z
 
-
+# Apply
 execute if entity @s[scores={cooldown=0}] unless entity @s[tag=fish] unless entity @s[tag=iron_golem] unless entity @s[tag=exploded] unless entity @s[tag=arrowed] unless entity @s[tag=ragdoll] store result entity @s Motion[0] double 0.1 run scoreboard players get @s dx
 execute if entity @s[scores={cooldown=0}] unless entity @s[tag=fish] unless entity @s[tag=iron_golem] unless entity @s[tag=exploded] unless entity @s[tag=arrowed] unless entity @s[tag=ragdoll] if score @s dy matches 0.. store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[scores={cooldown=0}] unless entity @s[tag=fish] unless entity @s[tag=iron_golem] unless entity @s[tag=exploded] unless entity @s[tag=arrowed] unless entity @s[tag=ragdoll] if score @s dy matches ..0 store result entity @s Motion[1] double 0.05 run scoreboard players get @s dy
@@ -58,3 +63,17 @@ execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result en
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches 0.. store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] if score @s dy matches ..0 store result entity @s Motion[1] double 0.15 run scoreboard players get @s dy
 execute if entity @s[tag=ragdoll] unless entity @s[tag=exploded] store result entity @s Motion[2] double 0.12 run scoreboard players get @s dz
+
+
+# Add motions together
+execute as @s store result score @s x run data get entity @s Motion[0] 100
+execute as @s store result score @s y run data get entity @s Motion[1] 100
+execute as @s store result score @s z run data get entity @s Motion[2] 100
+
+scoreboard players operation @s xm += @s x
+scoreboard players operation @s ym += @s y
+scoreboard players operation @s zm += @s z
+
+execute store result entity @s Motion[0] double 0.01 run scoreboard players get @s xm
+execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s ym
+execute store result entity @s Motion[2] double 0.01 run scoreboard players get @s zm

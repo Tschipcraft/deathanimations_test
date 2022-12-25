@@ -1,25 +1,8 @@
 ##by Tschipcraft
 # Displays particles for the given visual entity (~ ~ ~/~ ~/@s = visual entity)
 
-execute as @s[tag=torso,tag=bloody] positioned ^ ^ ^ run particle minecraft:block redstone_block ~ ~1.5 ~ 0.1 0 0.1 1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=head,tag=bloody] positioned ^ ^0.35 ^ run particle minecraft:block redstone_block ~ ~1.1 ~ 0.01 0 0.01 1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=leg,tag=bloody] positioned ^0.25 ^ ^ run particle minecraft:block redstone_block ~ ~1.5 ~ 0.01 0 0.01 1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=arm,tag=bloody] positioned ^0.25 ^ ^ run particle minecraft:block redstone_block ~ ~1.5 ~ 0.01 0 0.01 1 1 normal @a[scores={blood_local=1}]
-
-execute as @s[tag=torso,tag=cutom_bloody] positioned ^ ^ ^ run particle minecraft:item slime_ball ~ ~1.5 ~ 0.1 0 0.1 0.1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=head,tag=cutom_bloody] positioned ^ ^0.35 ^ run particle minecraft:item slime_ball ~ ~1.1 ~ 0.01 0 0.01 0.1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=leg,tag=cutom_bloody] positioned ^0.25 ^ ^ run particle minecraft:item slime_ball ~ ~1.5 ~ 0.01 0 0.01 0.1 1 normal @a[scores={blood_local=1}]
-execute as @s[tag=arm,tag=cutom_bloody] positioned ^0.25 ^ ^ run particle minecraft:item slime_ball ~ ~1.5 ~ 0.01 0 0.01 0.1 1 normal @a[scores={blood_local=1}]
-
-execute as @s[tag=torso,tag=sandy] positioned ^ ^ ^ run particle minecraft:block sand ~ ~1.5 ~ 0.1 0 0.1 1 1 normal
-execute as @s[tag=head,tag=sandy] positioned ^ ^0.35 ^ run particle minecraft:block sand ~ ~1.1 ~ 0.01 0 0.01 1 1 normal
-execute as @s[tag=leg,tag=sandy] positioned ^0.25 ^ ^ run particle minecraft:block sand ~ ~1.5 ~ 0.01 0 0.01 1 1 normal
-execute as @s[tag=arm,tag=visual,tag=sandy] positioned ^0.25 ^ ^ run particle minecraft:block sand ~ ~1.5 ~ 0.01 0 0.01 1 1 normal
-
-execute as @s[tag=torso,tag=watery] positioned ^ ^ ^ run particle minecraft:splash ~ ~1.5 ~ 0.1 0 0.1 1 1 normal
-execute as @s[tag=head,tag=watery] positioned ^ ^0.35 ^ run particle minecraft:splash ~ ~1.1 ~ 0.01 0 0.01 1 1 normal
-execute as @s[tag=leg,tag=watery] positioned ^0.25 ^ ^ run particle minecraft:splash ~ ~1.5 ~ 0.01 0 0.01 1 1 normal
-execute as @s[tag=arm,tag=watery] positioned ^0.25 ^ ^ run particle minecraft:splash ~ ~1.5 ~ 0.01 0 0.01 1 1 normal
+execute if block ~ ~1.4 ~ water run function deathanimations:general/particle/water
+execute unless block ~ ~1.4 ~ water run function deathanimations:general/particle/land
 
 execute as @s[tag=torso,tag=da_magical] positioned ^ ^ ^ run particle minecraft:witch ~ ~1.5 ~ 0.1 0 0.1 1 1 normal
 execute as @s[tag=head,tag=da_magical] positioned ^ ^0.35 ^ run particle minecraft:witch ~ ~1.1 ~ 0.01 0 0.01 1 1 normal

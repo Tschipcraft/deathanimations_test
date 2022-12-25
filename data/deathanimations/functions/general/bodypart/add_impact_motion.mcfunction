@@ -15,5 +15,8 @@ execute as @s[tag=da_explosion_death] at @s run function deathanimations:general
 # Apply motion
 execute as @s[tag=!da_no_knockback,tag=!iron_golem,tag=!ravager] at @s run function deathanimations:tick
 
+# Add swing momentum (Integrate into tick?)
+execute as @s[tag=da_player_death] at @s if entity @e[type=minecraft:marker,tag=da_player_swing,distance=..7] run function deathanimations:general/source/player_swing
+
 # Finalize entity to given settings
 function deathanimations:general/bodypart_finalize

@@ -2,7 +2,7 @@
 
 # Get player motion
 execute as @a[gamemode=!spectator] at @s run function deathanimations:general/get_player_motion
-
+function deathanimations:general/player_swing/core
 
 ### welcome & Menu
 # now in /loops

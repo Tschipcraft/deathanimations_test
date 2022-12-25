@@ -9,525 +9,512 @@
           "name": "minecraft:barrier",
           "functions": [
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:allay}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:allay"
-                  }
-                }
-              ]
-            },
-            {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{da_entity:phantom}",
-                    "conditions": [
-                      {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                          "type": "minecraft:phantom"
-                        }
-                      }
-                    ]
-                  },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:allay}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:allay"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:armor_stand}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:armor_stand"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:armor_stand}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:armor_stand"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:axolotl}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:axolotl"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:axolotl}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:blaze}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:blaze"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:blaze}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:blaze"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:cat}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:cat"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:cat}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:cat"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:cave_spider}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:cave_spider"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:cave_spider}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:cave_spider"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:chicken}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:chicken"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:chicken}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:chicken"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:cod}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:cod"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:cod}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:cod"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:cow}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:cow"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:cow}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:cow"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:creeper}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:creeper"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:creeper}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:drowned}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:drowned"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:drowned}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:drowned"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:enderman}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:enderman"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:enderman}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:enderman"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:evoker}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:evoker"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:evoker}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:evoker"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:frog}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:frog"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:frog}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:frog"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:goat}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:goat"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:goat}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:goat"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:husk}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:husk"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:husk}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:husk"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:illusioner}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:illusioner"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:illusioner}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:illusioner"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:ocelot}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:ocelot"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:ocelot}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:ocelot"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:pig}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:pig"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:pig}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:pig"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:piglin}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:piglin"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:piglin}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:piglin"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:piglin_brute}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:piglin_brute"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:piglin_brute}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:piglin_brute"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:pillager}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:pillager"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:pillager}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:pillager"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:rabbit}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:rabbit"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:rabbit}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:rabbit"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:salmon}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:salmon"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:salmon}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:salmon"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:sheep}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:sheep"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:sheep}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:sheep"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:skeleton}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:skeleton"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:skeleton}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:skeleton"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:skeleton_horse}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:skeleton_horse"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:skeleton_horse}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:skeleton_horse"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:snow_golem}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:snow_golem"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:snow_golem}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:snow_golem"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:spider}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:spider"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:spider}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:spider"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:stray}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:stray"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:stray}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:stray"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:tadpole}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:tadpole"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:tadpole}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:tadpole"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:tropical_fish}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:tropical_fish"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:tropical_fish}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:tropical_fish"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:turtle}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:turtle"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:turtle}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:turtle"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:vindicator}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:vindicator"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:vindicator}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:vindicator"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:wither}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:wither"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:wither}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:wither"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:wither_skeleton}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:wither_skeleton"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:wither_skeleton}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:wither_skeleton"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:zombie}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:zombie"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:zombie}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:zombie"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:zombie_villager}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:zombie_villager"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:zombie_villager}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:zombie_villager"
+						}
+					}
+				]
+			},
 			{
-              "function": "minecraft:set_nbt",
-              "tag": "{da_entity:zombified_piglin}",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type": "minecraft:zombified_piglin"
-                  }
-                }
-              ]
-            },
+				"function": "minecraft:set_nbt",
+				"tag": "{da_entity:zombified_piglin}",
+				"conditions": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:zombified_piglin"
+						}
+					}
+				]
+			},
 			{
               "function": "minecraft:set_nbt",
               "tag": "{CustomModelData:1b,da_death_detect:1b}"
@@ -560,33 +547,89 @@
               ]
             },
 			{
+				"function": "minecraft:copy_nbt",
+				"source": "killer",
+				"ops": [
+					{
+						"source": "Motion",
+						"target": "K_Motion",
+						"op": "replace"
+					}
+				]
+			},
+			{
+              "function": "minecraft:copy_nbt",
+              "source": "this",
+              "ops": [
+				{
+				  "source": "CustomName",
+				  "target": "CustomName",
+				  "op": "replace"
+				},
+				{
+				  "source": "ActiveEffects",
+				  "target": "ActiveEffects",
+				  "op": "replace"
+				},
+				{
+				  "source": "Fire",
+				  "target": "Fire",
+				  "op": "replace"
+				},
+				{
+				  "source": "HandItems",
+				  "target": "HandItems",
+				  "op": "replace"
+				},
+				{
+				  "source": "ArmorItems",
+				  "target": "ArmorItems",
+				  "op": "replace"
+				},
+				{
+				  "source": "Variant",
+				  "target": "Variant",
+				  "op": "replace"
+				},
+				{
+				  "source": "Motion",
+				  "target": "Motion",
+				  "op": "replace"
+				},
+				{
+				  "source": "Rotation",
+				  "target": "Rotation",
+				  "op": "replace"
+				}
+              ]
+            },
+			{
               "function": "minecraft:copy_nbt",
               "source": "this",
               "ops": [
                 {
-                  "source": "CustomName",
-                  "target": "CustomName",
+                  "source": "HasLeftHorn",
+                  "target": "HasLeftHorn",
                   "op": "replace"
                 },
                 {
-                  "source": "ActiveEffects",
-                  "target": "ActiveEffects",
-                  "op": "replace"
-                },
-				{
-                  "source": "Fire",
-                  "target": "Fire",
+                  "source": "HasRightHorn",
+                  "target": "HasRightHorn",
                   "op": "replace"
                 },
                 {
-                  "source": "HandItems",
-                  "target": "HandItems",
+                  "source": "IsScreamingGoat",
+                  "target": "IsScreamingGoat",
                   "op": "replace"
-                },
+                }
+              ],
+              "conditions": [
                 {
-                  "source": "ArmorItems",
-                  "target": "ArmorItems",
-                  "op": "replace"
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:goat"
+                  }
                 }
               ]
             },
