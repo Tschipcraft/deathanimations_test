@@ -11,6 +11,8 @@
 
 ### ⚠ THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! DO NOT USE WITHOUT BACKUP!
 
+### Gonna wait a bit with further development until I've completely figured out the new display entities 🐱‍🏍
+
 ## Roadmap
 
 This is the third development version of Death Animations v2.0 for Minecraft 1.19
@@ -42,6 +44,7 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
   - [x] Fixed broken inherited rotation
 
 📜 **Planned (not yet implemented):**
+- [ ] Use new display and interaction entities
 - [ ] Core adjustments
 - [ ] Calculated or randomized body part rotations
 - [ ] Making body parts spin on the z axis, making them have 3dof
@@ -55,9 +58,11 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
 - [ ] Special NBT heritage for mob variants/saddles
 - [ ] Axis lock system for special body part forms
 - [ ] Special animations for Blaze + Enderman
+- [ ] Adapt to [Smithed Conventions](https://wiki.smithed.dev/conventions/) for data pack compatibility
 - [ ] Bug fixing
 - [ ] Performance
 - [ ] New icon
+- [ ] Backwards compatibility
 
 A not so frequently updated roadmap can also be viewed on my [website](https://tschipcraft.ddns.net/en/deathanimations-experimental.html)
 
