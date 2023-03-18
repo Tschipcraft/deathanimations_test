@@ -13,4 +13,4 @@ schedule function deathanimations:loop/detect_entities 2s
 schedule clear deathanimations:loop/menu_interaction
 schedule function deathanimations:loop/menu_interaction 1s
 
-execute unless score global entity_count matches 1..30 run function deathanimations:reset
+execute unless score global entity_count matches 1..100 run function deathanimations:reset

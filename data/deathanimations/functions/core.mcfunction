@@ -17,7 +17,7 @@ execute if score Global auto_crafting matches 1 if score Global enable_pickup ma
 #execute if score Global age matches 1599.. run scoreboard players set Global age 1
 
 # Fail safe
-execute unless score Global part_lifetime matches 3 if score global entity_count matches 100.. run function deathanimations:reset
+#execute unless score Global part_lifetime matches 3 if score global entity_count matches 100.. run function deathanimations:reset
 
 
 ### Entity Detection
@@ -38,7 +38,7 @@ execute if score events entity_count matches ..50 as @a[gamemode=!spectator,limi
 scoreboard players add @e[type=#deathanimations:marker_entities] cooldown 0
 
 ### Bodyparts/Animations
-execute if score Global part_lifetime matches 2.. at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest,limit=150] at @s run function deathanimations:main
+execute if score Global part_lifetime matches 2.. at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest] at @s run function deathanimations:main
 execute if score Global part_lifetime matches ..1 at @r as @e[type=#deathanimations:marker_entities,tag=!death_detection,tag=!ragdoll,tag=!ragdoll_visual_nom,sort=nearest,limit=60] at @s run function deathanimations:main
 
 ## Duration
@@ -59,7 +59,7 @@ execute as @e[type=#deathanimations:marker_entities,tag=ravager_death] at @s run
 ## Phantom
 execute at @r as @e[type=phantom,tag=explode,sort=nearest,limit=6] run function deathanimations:animation/phantom
 
-## Endermite
+## Endermite item replace
 execute if entity @e[type=#deathanimations:marker_entities,tag=endermite] as @a[nbt={Inventory:[{id:"minecraft:chorus_fruit",tag:{CustomModelData:3}}]}] at @s run function deathanimations:replace
 
 

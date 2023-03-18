@@ -84,7 +84,7 @@ Make sure to adjust the data pack for your needs by opening the settings (`/trig
 
 ## Installation
 
-Download the latest release from [here](https://github.com/Tschipcraft/deathanimations_test/releases/latest). Put the datapack .zip file into the `datapacks` folder of your Minecraft world and the assetpack .zip file into your resourcepacks folder. Make sure to activate the resourcepack and datapack ingame.
+Download the latest release from [here](https://github.com/Tschipcraft/deathanimations_test/releases/latest). Put the data pack .zip file into the `datapacks` folder of your Minecraft world and the assetpack .zip file into your `.minecraft/resourcepacks` folder. Make sure to activate the resource pack and data pack ingame.
 
 
 ## Issues 🐱‍👤

@@ -30,7 +30,9 @@ tellraw @s [{"text":"\n"},{"text":"Stats:","bold":true,"underlined":true,"color"
 execute if score Global part_lifetime matches 3 run tellraw @s [{"text":"\u26a0 Body part duration is set to infinite! ","color":"red"},{"text":"Click here to change","color":"green","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"Click here"}]},"clickEvent":{"action":"run_command","value":"/trigger settings"}}]
 
 execute if score total entity_count matches 200..450 run tellraw @s {"text":"\u26a0 There are a lot of body parts!","color":"red"}
-execute if score total entity_count matches 450.. run tellraw @s {"text":"\u26a0 There are A LOT of body parts!","color":"red"}
+execute if score total entity_count matches 450..1200 run tellraw @s {"text":"\u26a0 There are A LOT of body parts!","color":"red"}
+execute if score total entity_count matches 1200..2500 run tellraw @s [{"text":"\u26a0 You're insane. Please clear the ","color":"red"},{"score":{"name":"total","objective":"entity_count"},"bold":true},{"text":" body parts!","color":"red"}]
+execute if score total entity_count matches 2500.. run tellraw @s {"text":"\u26a0 GAME SPEED CRITITCAL. PREPARE FOR EVACUATION!","color":"red"}
 
 execute if score events entity_count matches 60.. run tellraw @s {"text":"\u26a0 There are a lot of events! (Could be caused by iron golems/ravagers/projectiles)","color":"red"}
 
