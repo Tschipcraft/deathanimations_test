@@ -11,7 +11,7 @@
 
 ### ⚠ THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! DO NOT USE WITHOUT BACKUP!
 
-### Gonna wait a bit with further development until I've completely figured out the new display entities 🐱‍🏍
+### I'm currently working on a better ragdoll system behind the scenes. It is still in its early stages, so this may take some time.
 
 ## Roadmap
 
@@ -21,12 +21,11 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
 - [x] Rewrite of body part system
   - [x] Unique id assigning now counts upwards
   - [x] Id finding now uses predicates instead of functions making it faster
-  - [x] Functions are now more documented than in any other data pack made by me
-- [x] Generate models with a custom script, making it easier to add new mobs and avoiding errors like unintentional offsets to the ground
+- [x] Generate models with a custom program, making it easier to add new mobs and avoiding errors like unintentional offsets to the ground
 - [x] Take the pushers motion data into account for body part push calculations
 - [x] Evaluate tracked projectiles where they hit the entity, making more powerful Head-, Arm-, Leg- and Torsoshots possible (knockback)
 - [x] New animations for frogs, turtles, fish, tadpoles and snow golems
-- [x] Updated tag lists for 1.19
+- [x] Updated tag lists for Minecraft 1.19
 - [x] Offset adjustments
 - [x] Different blood particles for body parts inside water
 - [x] More factors for applied motion:
@@ -44,11 +43,16 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
   - [x] Fixed broken inherited rotation
 
 📜 **Planned (not yet implemented):**
+- [ ] Ragdoll system
+  - [ ] Replace already established body part system with more accurate ragdoll system?
+- [ ] Inherit killer position using loot tables
 - [ ] Use new display and interaction entities
-- [ ] Core adjustments
+  - [ ] Maybe implement less ticked body parts by using interpolation (far away body parts update every 5 ticks?)
+  - [ ] New disappear animation/smoother special animations
+  - [ ] Support for baby mobs
 - [ ] Calculated or randomized body part rotations
 - [ ] Making body parts spin on the z axis, making them have 3dof
-- [ ] Ragdolls
+- [ ] Custom particle system for blood?
 - [ ] Player Death Animations
 - [ ] Custom body part hit sound
 - [ ] Replace hardcoded materials
@@ -57,10 +61,10 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
   - [ ] Material mixing for head items (no use)/skeleton body (bonemeal)
 - [ ] Special NBT heritage for mob variants/saddles
 - [ ] Axis lock system for special body part forms
-- [ ] Special animations for Blaze + Enderman
+- [ ] Special animations for Blaze, Enderman, Ghast and Guardian
 - [ ] Adapt to [Smithed Conventions](https://wiki.smithed.dev/conventions/) for data pack compatibility
-- [ ] Bug fixing
-- [ ] Performance
+- [ ] Fix bugs
+- [ ] Improve Performance
 - [ ] New icon
 - [ ] Backwards compatibility
 
@@ -72,12 +76,12 @@ A not so frequently updated roadmap can also be viewed on my [website](https://t
 Mobs have new, _epic_ animations when they die.
 
 **Works with:**
-Zombies, Husks, Skeletons, Strays, Creepers, Drowned, Spiders, Cave Spiders, Phantoms, Enderman, (Villagers), Pillagers, Evokers, Vindicators, Illusioners, Piglins, Piglin Brutes, Zombified Piglins, Pigs, Cows, Chicken, Sheep, Frogs, Tadpoles, Fish, Snow Golem, (Iron Golem), (Ravagers), (Endermites).
+Zombies, Husks, Skeletons, Strays, Creepers, Drowned, Spiders, Cave Spiders, Phantoms, Enderman, (Villagers), Pillagers, Evokers, Vindicators, Illusioners, Piglins, Piglin Brutes, Zombified Piglins, Pigs, Cows, Chicken, Sheep, Frogs, Tadpoles, Fish, Snow Golem, (Iron Golem, Ravagers, Endermites - soon).
 
 Most body parts can be picked up with a right-click.
 You can also use them inside a crafting table or even eat them.
 
-(Unique animations will be available for Iron Golems, Phantoms, Blazes, Enderman, Endermites and Ravagers.)
+(Unique animations will be available for Iron Golems, Phantoms, Blazes, Enderman, Endermites and Ravagers. - soon)
 
 Make sure to adjust the data pack for your needs by opening the settings (`/trigger settings`)
 
