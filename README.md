@@ -13,6 +13,13 @@
 
 ### I'm currently working on a better ragdoll system behind the scenes. It is still in its early stages, so this may take some time.
 
+If you want to sponsor this project, feel free to support me over on Ko-fi! Any amount helps.
+
+<a href="https://ko-fi.com/tschipcraft">
+<img width="250px" height="40px" title="Support me on Ko-fi to help me keep making epic stuff!" alt="Ko-fi button" src="https://storage.ko-fi.com/cdn/brandasset/kofi_button_red.png">
+</a>
+
+
 ## Roadmap
 
 This is the third development version of Death Animations v2.0 for Minecraft 1.19
