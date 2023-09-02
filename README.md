@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="/pack.png" width="64" height="64"><br/>
+  <img src="pack.png" width="64" height="64"><br/>
   Death Animations v2.0 Test Branch
 </h1>
 <p align="center">
@@ -50,6 +50,7 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
   - [x] Fixed broken inherited rotation
 
 📜 **Planned (not yet implemented):**
+- [ ] Complete pack restructure
 - [ ] Ragdoll system
   - [ ] Replace already established body part system with more accurate ragdoll system?
 - [ ] Inherit killer position using loot tables
@@ -71,9 +72,10 @@ This is the third development version of Death Animations v2.0 for Minecraft 1.1
 - [ ] Special animations for Blaze, Enderman, Ghast and Guardian
 - [ ] Adapt to [Smithed Conventions](https://wiki.smithed.dev/conventions/) for data pack compatibility
 - [ ] Fix bugs
-- [ ] Improve Performance
 - [ ] New icon
+- [ ] Improve Performance
 - [ ] Backwards compatibility
+- [ ] Mod version
 
 A not so frequently updated roadmap can also be viewed on my [website](https://tschipcraft.ddns.net/en/deathanimations-experimental.html)
 

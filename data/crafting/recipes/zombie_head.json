@@ -1,12 +1,12 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:zombie_head"
-        }
-    ],
-    "result": {
-        "item": "minecraft:rotten_flesh",
-        "count": 2
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:zombie_head"
     }
+  ],
+  "result": {
+    "item": "minecraft:rotten_flesh",
+    "count": 2
+  }
 }

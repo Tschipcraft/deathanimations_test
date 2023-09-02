@@ -1,7 +1,7 @@
 {
-	"replace": false,
-	"values": [
-		"#minecraft:flowers",
+  "replace": false,
+  "values": [
+    "#minecraft:flowers",
     "#minecraft:fishes",
     "#minecraft:coals",
     "#minecraft:arrows",
@@ -10,5 +10,5 @@
     "minecraft:nautilus_shell",
     "minecraft:dragon_breath",
     "minecraft:totem_of_undying"
-	]
+  ]
 }

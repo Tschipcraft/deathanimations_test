@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:zombie",
-	  "minecraft:husk",
+    "minecraft:husk",
     "minecraft:drowned",
     "minecraft:skeleton",
     "minecraft:wither_skeleton",

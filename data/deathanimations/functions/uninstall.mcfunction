@@ -40,13 +40,15 @@ scoreboard objectives remove e_detection
 scoreboard objectives remove spawn_death_e
 scoreboard objectives remove b_test
 
-## teams
+## Teams
 team remove NoCollision
 team remove NoName
 
-## settings
+## Settings
 scoreboard objectives remove blood_local_on
 scoreboard objectives remove blood_local_off
+scoreboard objectives remove ts.da.settings
+
 scoreboard objectives remove blood_local
 scoreboard objectives remove enable_drops
 scoreboard objectives remove enable_pickup
@@ -54,8 +56,6 @@ scoreboard objectives remove auto_crafting
 scoreboard objectives remove paper_fix
 scoreboard objectives remove blood_global
 scoreboard objectives remove part_lifetime
-scoreboard objectives remove da_welcome
-scoreboard objectives remove da_how_to_use
 
 scoreboard objectives remove da_r_flesh_d
 scoreboard objectives remove da_bone_d
@@ -70,15 +70,22 @@ scoreboard objectives remove da_saddle_d
 scoreboard objectives remove settings
 scoreboard objectives remove da_v
 
-scoreboard objectives remove menu
-scoreboard objectives remove da_welcome
+# Menu
+scoreboard objectives remove tschipcraft.menu
+scoreboard objectives remove ts.da.welcome
 scoreboard objectives remove da_how_to_use
 scoreboard objectives remove d_launcher
 scoreboard objectives remove ragdoll_zombie
 scoreboard objectives remove troubleshoot
 
 
-say Uninstalled Death Animations by Tschipcraft!
+# Legacy
+scoreboard objectives remove menu
+scoreboard objectives remove da_welcome
+
+
+say ⏻ Uninstalled Death Animations by Tschipcraft!
 
 datapack disable "file/deathanimations.zip"
 datapack disable "file/deathanimations"
+datapack disable "file/${file_name}"

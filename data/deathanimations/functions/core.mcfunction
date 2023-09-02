@@ -1,14 +1,24 @@
-#### by Tschipcraft
+## by Tschipcraft
+# Currently the main function
+
+## Menu
+# Partly in /loops
+scoreboard players enable @a tschipcraft.menu
+scoreboard players add @a ts.da.welcome 0
+execute as @a[scores={tschipcraft.menu=1..}] run scoreboard players set @s ts.da.welcome 0
+execute as @a[scores={ts.da.welcome=0}] run function deathanimations:messages/welcome
+execute as @a[scores={da_how_to_use=1}] run function deathanimations:messages/how_to_use
+
+execute as @a[scores={tschipcraft.menu=1..}] run schedule function deathanimations:messages/menu_reset 1t
+
 
 # Get player motion
 execute as @a[gamemode=!spectator] at @s run function deathanimations:general/get_player_motion
 function deathanimations:general/player_swing/core
 
-### welcome & Menu
-# now in /loops
 
 ### General
-## auto crafting
+## Auto Crafting
 execute if score Global auto_crafting matches 1 if score Global enable_pickup matches 1 as @a[gamemode=!spectator] run function deathanimations:auto_crafting/core
 
 ## Reset data pack
@@ -63,7 +73,7 @@ execute at @r as @e[type=phantom,tag=explode,sort=nearest,limit=6] run function 
 execute if entity @e[type=#deathanimations:marker_entities,tag=endermite] as @a[nbt={Inventory:[{id:"minecraft:chorus_fruit",tag:{CustomModelData:3}}]}] at @s run function deathanimations:replace
 
 
-### Lightning; WIP
+### Lightning Bolt Animation - WIP
 execute as @e[type=#deathanimations:lightning_animation] at @s if entity @e[type=minecraft:lightning_bolt,distance=..2] run scoreboard players set @s da_lightning 1
 scoreboard players add @e[type=#deathanimations:lightning_animation,scores={da_lightning=1..}] da_lightning 1
 
@@ -77,7 +87,9 @@ scoreboard players add @e[type=#deathanimations:lightning_animation,scores={da_l
 
 scoreboard players reset @e[type=#deathanimations:lightning_animation,scores={da_lightning=12..}] da_lightning
 
+# Spark particles
 function deathanimations:117_addon
+
 
 ### Player Death Animations
 #execute as @a[scores={da_player_death=1..}] at @s run function deathanimations:player/main

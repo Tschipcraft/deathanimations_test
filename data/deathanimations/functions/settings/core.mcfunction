@@ -1,7 +1,7 @@
 ## by Tschipcraft
 
 #Head
-tellraw @s {"text":"=-=Death Animations Settings=-=","bold":true,"color":"dark_green"}
+tellraw @s {"text":"\n=-=Death Animations Settings=-=","bold":true,"color":"dark_green"}
 #without op; local blood
 tellraw @s ["",{"text":"\n"},{"text":"For players without op:","color":"gold"}]
 execute if entity @s[scores={blood_local=1}] run tellraw @s ["",{"text":"Blood","bold":true},{"text":" \u0020 "},{"text":"[on]","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger blood_local_on set 1"}},{"text":" \u0020| \u0020"},{"text":"[off]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger blood_local_off set 1"}}]
@@ -34,10 +34,14 @@ execute if score Global da_mode matches 3 if score Global enable_pickup matches 
 execute if score Global da_mode matches 3 if score Global enable_pickup matches 1 if score Global auto_crafting matches 1 run tellraw @s ["",{"text":"Automatically transform picked up bodyparts into rotten flesh, bones, ...","bold":true},{"text":" \u0020"},{"text":"[on]","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/enable_auto_crafting"}},{"text":" \u0020| \u0020"},{"text":"[off]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/disable_auto_crafting"}}]
 execute if score Global da_mode matches 3 if score Global enable_pickup matches 1 if score Global auto_crafting matches 0 run tellraw @s ["",{"text":"Automatically transform picked up bodyparts into rotten flesh, bones, ...","bold":true},{"text":" \u0020 "},{"text":"[on]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/enable_auto_crafting"}},{"text":" \u0020| \u0020"},{"text":"[off]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function deathanimations:settings/disable_auto_crafting"}}]
 
-execute if score Global da_mode matches 3 if score Global enable_pickup matches 0 run tellraw @s ["",{"text":"Automatically transform picked up bodyparts into rotten flesh, bones, ... \u0020[on] \u0020| \u0020[off]","color":"gray","italic":"true","hoverEvent":{"action":"show_text","contents":"Activate Ability to pick up bodyparts first!"}}]
+execute if score Global da_mode matches 3 if score Global enable_pickup matches 0 run tellraw @s ["",{"text":"Automatically transform picked up bodyparts into rotten flesh, bones, ... \u0020[on] \u0020| \u0020[off]","color":"gray","italic":true,"hoverEvent":{"action":"show_text","contents":"Activate Ability to pick up bodyparts first!"}}]
 
 
 #Advanced settings
 tellraw @s ["",{"text":"\n"},{"text":"Advanced settings:","color":"gold"}]
 execute if score Global paper_fix matches 1 run tellraw @s ["",{"text":"Sound fix for Paper Servers:","bold":true,"hoverEvent":{"action":"show_text","contents":"Do not activate unless you are using paper or a fork of paper"}},{"text":" \u0020"},{"text":"[on]","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/enable_paper_fix"}},{"text":" \u0020| \u0020"},{"text":"[off]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/disable_paper_fix"}}]
 execute if score Global paper_fix matches 0 run tellraw @s ["",{"text":"Sound fix for Paper Servers:","bold":true,"hoverEvent":{"action":"show_text","contents":"Do not activate unless you are using paper or a fork of paper"}},{"text":" \u0020 "},{"text":"[on]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function deathanimations:settings/enable_paper_fix"}},{"text":" \u0020| \u0020"},{"text":"[off]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function deathanimations:settings/disable_paper_fix"}}]
+
+
+function deathanimations:settings/hide_feedback/main
+playsound minecraft:block.dispenser.dispense master @s ~ ~ ~ 0.2 2

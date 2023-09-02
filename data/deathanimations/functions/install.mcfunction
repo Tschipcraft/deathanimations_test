@@ -29,8 +29,10 @@ scoreboard objectives add entity_count dummy
 scoreboard objectives add wait dummy
 scoreboard objectives add da_id dummy
 
-scoreboard objectives add menu trigger
-scoreboard objectives add da_welcome trigger
+# Menu
+scoreboard objectives add tschipcraft.menu trigger
+scoreboard objectives add ts.da.welcome trigger
+
 scoreboard objectives add da_how_to_use trigger
 scoreboard objectives add troubleshoot trigger
 
@@ -57,16 +59,19 @@ scoreboard objectives add da_player_death deathCount
 scoreboard objectives add da_lightning dummy
 
 
-## teams
+## Teams
 team add NoCollision
 team modify NoCollision collisionRule never
 team add NoName
 team modify NoName nametagVisibility never
 team modify NoName collisionRule never
 
-## settings
+## Settings
+scoreboard objectives add ts.da.settings dummy
+
 scoreboard objectives add blood_local_on trigger
 scoreboard objectives add blood_local_off trigger
+# why on earth did i do this? \/
 scoreboard objectives add blood_local dummy
 scoreboard objectives add enable_drops dummy
 scoreboard objectives add enable_pickup dummy
@@ -76,9 +81,9 @@ scoreboard objectives add part_lifetime dummy
 scoreboard objectives add ragdoll_zombie dummy
 scoreboard objectives add blood_global dummy
 scoreboard objectives add da_mode dummy
+
 scoreboard players enable @a blood_local_off
 scoreboard players enable @a blood_local_on
-scoreboard players enable @a menu
 
 scoreboard objectives add settings trigger
 

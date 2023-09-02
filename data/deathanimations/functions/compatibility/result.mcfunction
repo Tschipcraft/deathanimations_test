@@ -13,4 +13,4 @@ execute as @e[type=armor_stand,tag=da_leg_test] at @s unless entity @e[type=item
 
 kill @e[tag=da_leg_test]
 
-title @a actionbar {"translate":"❌ Death Animations Resource Pack is NOT installed!","color":"red","bold":"true"}
+title @a actionbar {"translate":"❌ Death Animations Resource Pack is NOT installed!","color":"red","bold":true}
