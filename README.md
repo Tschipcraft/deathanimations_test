@@ -7,20 +7,30 @@
   <a href="https://github.com/Tschipcraft/deathanimations_test/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/deathanimations_test/total?logo=github&style=for-the-badge&colorB=d100ff"></a>
 </p>
 
-> A data pack for Minecraft 1.19x
+> A data pack for Minecraft
 
 ### ⚠ THIS IS A DEVELOPMENT EDITION! BUGS MAY OCCUR! DO NOT USE WITHOUT BACKUP!
 
-### I'm currently working on a better ragdoll system behind the scenes. It is still in its early stages, so this may take some time.
+## What's been happening?
 
-If you want to sponsor this project, feel free to support me over on Ko-fi! Any amount helps.
+Due to my limited free time, development of this rather large data pack compared to my other data packs is difficult to fit into my schedule, but rest assured that development has not stopped and this project is still on my list of things I want to finish. Also, due to the (newly) added display entities, I'm tempted to completely rewrite most of the logic of the already established work in this rewrite, which would add another refactor with no results, but may be beneficial to the overall performance of this data pack in the long run.
+
+For upcoming updates, I'm taking a new approach by planning ahead first and splitting the code into modules to make them easier to develop and maintain.
+
+<details>
+<summary>I want to help!</summary>
+
+Contributions in form of pull request are at the current time not really feasable.
+
+If you want to support this project, feel free to support me over on Ko-fi, any amount helps.
 
 <a href="https://ko-fi.com/tschipcraft">
 <img width="250px" height="40px" title="Support me on Ko-fi to help me keep making epic stuff!" alt="Ko-fi button" src="https://storage.ko-fi.com/cdn/brandasset/kofi_button_red.png">
 </a>
 
+</details>
 
-## Roadmap
+## (Old) Roadmap
 
 This is the third development version of Death Animations v2.0 for Minecraft 1.19
 
